@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080b12">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="Explore the CNR Clan Blockman Go PvP rankings, understand the tier standards, compare published player profiles, and apply for an official tier test.">
+<meta property="og:type" content="website"><meta property="og:title" content="CNR Clan — Blockman Go PvP Rankings"><meta property="og:description" content="The CNR competitive roster: published tiers, player profiles, test standards and applications.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff405b'/%3E%3Ctext x='32' y='41' font-family='Arial' font-weight='900' font-size='24' text-anchor='middle' fill='white'%3ECNR%3C/text%3E%3C/svg%3E">
+<title>CNR Clan | Competitive PvP Rankings</title>
+<style>
+:root{color-scheme:dark;--bg:#070b14;--panel:#101827;--panel2:#151f31;--line:#26364d;--muted:#a9b8cc;--text:#f4f7ff;--orange:#ff9a3d;--red:#ff405b;--gold:#ffd166;--green:#35e6a1;--purple:#c084fc;--blue:#38bdf8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 12% 0%,#14223a 0,transparent 38%),radial-gradient(ellipse at 90% 15%,#21142d 0,transparent 30%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}
+button,input,select,textarea{font:inherit}button,a{-webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}
+.wrap{width:min(1120px,calc(100% - 32px));margin:auto}
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(7,11,20,.92);backdrop-filter:blur(10px);border-bottom:1px solid #26364d;box-shadow:0 6px 28px #0006}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:13px 0}
+.brand{display:flex;align-items:center;gap:11px;min-width:0}
+.brandmark{width:42px;height:42px;display:grid;place-items:center;background:linear-gradient(135deg,#ff405b,#ff8a3d);color:#fff;font-weight:950;letter-spacing:-1.5px;font-size:16px;border-radius:10px;box-shadow:0 0 22px #ff405b45}
+.brandname{font-weight:900;letter-spacing:.06em;font-size:15px;color:#f6f8ff}
+.brandsub{color:#9aabc3;font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin-top:3px}
+.navlinks{display:flex;align-items:center;gap:5px}
+.navlinks a,.navlinks button{padding:9px 11px;border-radius:7px;color:#c4d1e4;font-size:12px;font-weight:750;border:1px solid transparent;background:transparent;cursor:pointer}
+.navlinks a:hover,.navlinks button:hover{background:#1a2940;color:#fff;box-shadow:inset 0 0 0 1px #38bdf855}
+.navlinks .yt{background:linear-gradient(110deg,#ff304f,#ff6b45);color:#fff;border-color:#ff405b;box-shadow:0 0 18px #ff405b35}
+.navlinks .dc{background:linear-gradient(110deg,#5865f2,#7a86ff);color:#fff;border-color:#5865f2}
+.hero{padding:48px 0 25px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:26px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #ff405b65;background:#ff405b12;color:#ff9aa9;border-radius:6px;padding:7px 10px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:850;box-shadow:0 0 18px #ff405b0d}
+.dot{width:7px;height:7px;background:var(--green);border-radius:50%;box-shadow:0 0 12px #35e6a1}
+.hero h1{font-size:clamp(36px,5.4vw,62px);line-height:1.02;letter-spacing:-.05em;margin:17px 0 13px;font-weight:950;color:#f7f9ff}
+.gradient{background:linear-gradient(90deg,#ff405b,#ff9a3d 65%,#ffd166);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:570px;color:#b5c3d8;line-height:1.75;font-size:14px}
+.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}
+.btn{border:1px solid #344963;background:#172338;color:#eaf2ff;padding:10px 14px;border-radius:7px;font-size:12px;font-weight:800;cursor:pointer;transition:.15s;display:inline-block}
+.btn:hover{border-color:#38bdf8;background:#1a2a41;box-shadow:0 0 16px #38bdf81a}
+.btn-primary{background:linear-gradient(105deg,#ff405b,#ff743f);border-color:#ff5360;color:#fff;box-shadow:0 0 22px #ff405b30}
+.btn-primary:hover{background:linear-gradient(105deg,#ff536c,#ff8a50);border-color:#ff7184;box-shadow:0 0 26px #ff405b4a}
+.btn-quiet{background:transparent}
+.btn-danger{border-color:#8c3a45;color:#ffb3bd}
+.btn[disabled]{opacity:.55;cursor:wait}
+.hero-panel,.stat,.card,.tier-row,.admin-item,.modal{background:linear-gradient(145deg,#121d2e,#0e1726);border:1px solid #293b55;box-shadow:0 8px 30px #0002}
+.hero-panel{border-radius:12px;padding:20px}
+.panel-head{display:flex;justify-content:space-between;align-items:center;gap:10px;color:#a9b8cc;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:850}
+.live{color:#35e6a1;display:flex;align-items:center;gap:6px}
+.hero-score{font-size:32px;font-weight:950;letter-spacing:-.04em;margin:19px 0 4px;color:#fff}
+.hero-small{font-size:11px;color:#a9b8cc;line-height:1.6}
+.mini-bars{display:grid;gap:11px;margin-top:20px}
+.mini-row{display:grid;grid-template-columns:42px 1fr 25px;gap:10px;align-items:center;font-size:11px;font-weight:850}
+.bar{height:6px;background:#26354a;border-radius:99px;overflow:hidden}
+.bar span{display:block;height:100%;border-radius:99px;transition:width .4s}
+.mini-row b{text-align:right;color:#dce8f8}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin:15px auto 35px}
+.stat{border-radius:11px;padding:16px;transition:border-color .18s,transform .18s}
+.stat:hover{border-color:#38bdf899;transform:translateY(-2px)}
+.stat strong{font-size:24px;letter-spacing:-.04em;color:#fff}
+.stat div:last-child{font-size:10px;color:#a9b8cc;text-transform:uppercase;letter-spacing:.09em;margin-top:5px}
+.section{padding:15px 0 30px}
+.section-title{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:16px}
+.kicker{font-size:10px;color:#ff9a68;font-weight:900;text-transform:uppercase;letter-spacing:.16em}
+.section h2{margin:6px 0 0;font-size:24px;letter-spacing:-.035em;color:#f3f6ff}
+.subtext{font-size:12px;color:#a9b8cc;margin-top:7px;line-height:1.65}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.field{background:#0b1321;border:1px solid #31445e;border-radius:7px;color:#f3f7ff;padding:10px 11px;outline:none;min-width:0}
+.field::placeholder{color:#8294ad}
+.field:focus{border-color:#38bdf8;box-shadow:0 0 0 3px #38bdf822,0 0 18px #38bdf815}
+.search{flex:1;min-width:180px}.toolbar select{min-width:125px}
+.tier-groups{display:grid;gap:10px}
+.tier-row{display:grid;grid-template-columns:84px 1fr;gap:11px;border-radius:11px;padding:10px;min-height:90px}
+.tier-label{display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:7px;font-weight:950;font-size:25px;letter-spacing:-.04em}
+.tier-label small{font-size:9px;letter-spacing:.05em;margin-top:4px}
+.tier-S{background:linear-gradient(135deg,#3a1728,#241522);color:#ff718a;border:1px solid #ff405b70;box-shadow:inset 0 0 20px #ff405b0c}
+.tier-A{background:linear-gradient(135deg,#2c1c45,#1d1932);color:#d0a4ff;border:1px solid #a855f770}
+.tier-B{background:linear-gradient(135deg,#12382f,#10261f);color:#55f0b3;border:1px solid #35e6a166}
+.tier-C{background:linear-gradient(135deg,#122f4a,#101f33);color:#65ccff;border:1px solid #38bdf866}
+.tier-U{background:#1a2434;color:#b2bfd2;border:1px solid #3a4a60}
+.players{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.player{display:flex;align-items:center;gap:10px;min-width:0;padding:10px;border:1px solid #2a3b53;border-radius:8px;background:#111d2e;cursor:pointer;text-align:left;color:#f1f6ff;width:100%}
+.player:hover{background:#172840;border-color:#38bdf8;box-shadow:0 0 18px #38bdf812}
+.avatar{width:36px;height:36px;flex:0 0 36px;border-radius:8px;display:grid;place-items:center;background:linear-gradient(145deg,#263952,#172337);border:1px solid #405572;font-size:11px;font-weight:950;color:#f3f7ff}
+.pinfo{min-width:0;flex:1}
+.pname{display:block;font-size:12px;font-weight:850;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pmeta{display:block;font-size:10px;color:#a9b8cc;margin-top:4px}
+.p-tier{font-size:9px;font-weight:900;background:#1a2a40;border:1px solid #3a4f6a;padding:5px 6px;border-radius:5px;color:#dce8f8;white-space:nowrap}
+.empty{padding:26px;text-align:center;color:#a9b8cc;border:1px dashed #40536d;border-radius:9px;font-size:13px}
+.guide{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.guide .gcard{border-radius:10px;padding:14px;font-size:11px;line-height:1.6;color:#c4d1e4}
+.guide .gcard b{display:block;font-size:20px;letter-spacing:-.04em;margin-bottom:4px}
+.split{display:grid;grid-template-columns:1fr .8fr;gap:14px}
+.card{border-radius:12px;padding:19px}
+.card h3{font-size:14px;margin:0 0 5px}
+.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.formfield{display:grid;gap:6px}
+.formfield label{font-size:10px;color:#c2cfe1;font-weight:850;text-transform:uppercase;letter-spacing:.08em}
+.formfield .field{width:100%}.formfield.full{grid-column:1/-1}
+.hint{font-size:10px;color:#a9b8cc;line-height:1.6}
+.notice{border:1px solid #8c4a4f;background:#291c20;color:#ffc3c9;padding:11px 12px;border-radius:7px;font-size:11px;line-height:1.6;margin:13px 0}
+.notice.ok{border-color:#2d7d62;background:#10261f;color:#9df2cf}
+.founders{display:grid;gap:0;margin-top:14px}
+.founder{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid #29384d;font-size:11px}
+.founder:last-child{border-bottom:0}.founder span{color:#a9b8cc}.founder b{color:#ffd166}
+.admin{margin:15px 0 32px;border:1px solid #ff405b70;background:linear-gradient(145deg,#241722,#151827);border-radius:11px;padding:18px;box-shadow:0 0 28px #ff405b0b}
+.admin-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.admin h2{font-size:19px;margin:0;color:#fff}
+.admin-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:16px}
+.admin-item{border-radius:8px;padding:12px;background:#121c2c;border-color:#3a344c}
+.admin-item h4{margin:0 0 10px;font-size:12px}
+.admin-item .field{width:100%;margin:4px 0}
+.admin-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}
+.status{font-size:10px;color:#ffbd8c;margin-top:8px}
+.rowline{border-top:1px solid #33303a;padding:10px 0}
+.hidden{display:none!important}
+.footer{border-top:1px solid #26364d;padding:22px 0 30px;color:#9eafc7;font-size:10px;background:#080d17}
+.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.toast{position:fixed;z-index:50;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));max-width:min(380px,calc(100% - 32px));background:#111d2e;border:1px solid #3b506d;color:#fff;padding:13px 16px;border-radius:8px;box-shadow:0 12px 40px #0008;font-size:12px}
+.toast.error{border-color:#ff405b}
+.pill{display:inline-block;padding:5px 8px;border-radius:5px;font-size:9px;font-weight:900;letter-spacing:.07em;text-transform:uppercase;background:#243149;color:#d0dcee}
+.modal-backdrop{position:fixed;inset:0;background:#020611d9;backdrop-filter:blur(7px);z-index:40;display:grid;place-items:center;padding:16px}
+.modal{width:min(450px,100%);border-radius:12px;padding:21px;border-color:#3a4f6c;box-shadow:0 15px 45px #0006}
+.modal h3{margin:0 0 7px}.modal p{color:#a9b8cc;font-size:12px;line-height:1.6}
+.modal .field{width:100%;margin:8px 0}
+.close-row{display:flex;justify-content:flex-end;gap:8px;margin-top:10px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.step{border-radius:11px;padding:16px;background:linear-gradient(145deg,#121d2e,#0e1726);border:1px solid #293b55}
+.step .num{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;background:linear-gradient(135deg,#ff405b,#ff8a3d);font-size:12px;font-weight:950;color:#fff;margin-bottom:10px}
+.step b{display:block;font-size:13px;margin-bottom:5px}.step span{font-size:11px;color:#a9b8cc;line-height:1.65}
+details.faq{border:1px solid #293b55;border-radius:10px;background:#0e1726;margin-bottom:8px}
+details.faq summary{cursor:pointer;padding:14px 16px;font-size:13px;font-weight:800;list-style:none}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary:after{content:"+";float:right;color:#ff9a68}
+details.faq[open] summary:after{content:"\2013"}
+details.faq p{margin:0;padding:0 16px 14px;color:#a9b8cc;font-size:12px;line-height:1.7}
+.check{display:flex;gap:9px;align-items:flex-start;font-size:11px;color:#c4d1e4;line-height:1.6}.check input{margin-top:3px;accent-color:#ff405b}
+textarea.field{resize:vertical;min-height:84px}
+@media(max-width:760px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:420px){.steps{grid-template-columns:1fr}}
+.sr{position:absolute;left:-9999px}
+.badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+.bdg{font-size:10px;font-weight:850;padding:5px 9px;border-radius:999px;border:1px solid #3a4f6a;background:#1a2a40;color:#dce8f8}
+.bdg.v{border-color:#2d7d62;background:#10261f;color:#7ff0c4}.bdg.t{border-color:#8a6d1f;background:#2a2210;color:#ffd166}
+.vt{color:#35e6a1;font-weight:900}
+.upd{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #29384d;font-size:12px}.upd:last-child{border-bottom:0}
+.upd .udot{width:9px;height:9px;border-radius:50%;flex:0 0 9px;background:#38bdf8;box-shadow:0 0 10px #38bdf8}
+.upd span.txt{flex:1;min-width:0;line-height:1.5}.upd small{display:block;color:#a9b8cc;font-size:10px;margin-top:2px}
+.badgepick{display:flex;gap:6px 12px;flex-wrap:wrap;margin:6px 0}.badgepick label{font-size:11px;color:#c4d1e4;display:flex;gap:6px;align-items:center;cursor:pointer}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.chip{border:1px solid #344963;background:#172338;color:#c4d1e4;border-radius:999px;padding:7px 13px;font-size:11px;font-weight:850;cursor:pointer;transition:.15s}
+.chip:hover{border-color:#38bdf8;color:#fff}.chip.on{background:linear-gradient(105deg,#ff405b,#ff743f);border-color:#ff5360;color:#fff}
+.chip i{font-style:normal;opacity:.75;margin-left:5px;font-weight:700}
+.rules{margin:0;padding-left:18px;font-size:13px;line-height:1.95;color:#c4d1e4}
+.totop{position:fixed;left:calc(16px + env(safe-area-inset-left,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;width:40px;height:40px;border-radius:10px;border:1px solid #344963;background:#172338;color:#fff;cursor:pointer;font-size:16px;box-shadow:0 6px 20px #0006}
+.totop:hover{border-color:#38bdf8}
+.footer-links{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:14px;font-size:11px;font-weight:700}.footer-links a:hover{color:#fff}
+@media(max-width:760px){.nav{align-items:flex-start}.navlinks{gap:2px;flex-wrap:wrap;justify-content:flex-end}.navlinks a,.navlinks button{padding:8px 7px;font-size:10px}.hero{grid-template-columns:1fr;padding-top:30px}.stats{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:1fr}.players{grid-template-columns:1fr}.tier-row{grid-template-columns:72px 1fr;padding:8px}.tier-label{font-size:22px}.admin-grid{grid-template-columns:1fr}.section-title{align-items:flex-start;flex-direction:column}.brandname{font-size:13px}.brandsub{font-size:9px}.guide{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:420px){.wrap{width:calc(100% - 22px)}.nav{gap:8px}.brand{gap:8px}.brandmark{width:36px;height:36px}.navlinks a:not(.yt):not(.dc){display:none}.hero h1{font-size:39px}.formgrid{grid-template-columns:1fr}.formfield.full{grid-column:auto}.stats{gap:8px}.stat{padding:13px}.stat strong{font-size:22px}}
+@media(prefers-reduced-motion:no-preference){.hero-panel,.section,.stats{animation:panelIn .55s ease-out both}@keyframes panelIn{from{opacity:.65;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}}
+
+/* =========================================================
+   CNR CLAN / COMPETITIVE INTERFACE LAYER V11
+   Visual-only overrides. Existing HTML, IDs and JavaScript
+   are intentionally preserved.
+   ========================================================= */
+:root{
+  --bg:#080b12;
+  --panel:#101722;
+  --panel2:#151e2b;
+  --line:#2a3545;
+  --muted:#a7b2c3;
+  --text:#f2f5fa;
+  --orange:#ff9a3d;
+  --red:#ff5268;
+  --gold:#f0c66a;
+  --green:#56d6a4;
+  --purple:#c4a0fa;
+  --blue:#72caff;
+}
+html{scroll-padding-top:92px;scroll-behavior:smooth}
+body{
+  background:
+    radial-gradient(ellipse at 50% -20%,rgba(55,83,119,.25),transparent 48%),
+    linear-gradient(180deg,#0a0e16 0%,var(--bg) 48%,#090d14 100%);
+  color:var(--text);
+  line-height:1.55;
+  letter-spacing:.005em;
+}
+::selection{background:#ff52684d;color:#fff}
+a,button,input,select,textarea{-webkit-tap-highlight-color:transparent}
+button,input,select,textarea{font-family:inherit}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,
+textarea:focus-visible,summary:focus-visible{
+  outline:2px solid var(--blue);outline-offset:3px
+}
+.wrap{width:min(1180px,calc(100% - 36px))}
+.topbar{
+  background:rgba(8,11,18,.94);
+  border-bottom:1px solid #2b3748;
+  box-shadow:0 8px 28px #0003;
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px)
+}
+.nav{min-height:70px;gap:18px}
+.brand{gap:12px}
+.brandmark{
+  border-radius:11px;
+  background:linear-gradient(145deg,#ff5268,#c9324c);
+  box-shadow:0 4px 18px #ff52681d;
+  letter-spacing:-1.4px
+}
+.brandname{letter-spacing:.095em;font-size:14px}
+.brandsub{color:#9caabe;letter-spacing:.15em}
+.navlinks{gap:4px}
+.navlinks a,.navlinks button{
+  border-radius:8px;
+  transition:background .18s ease,border-color .18s ease,color .18s ease;
+  white-space:nowrap
+}
+.navlinks a:hover,.navlinks button:hover{
+  background:#172333;color:#fff;border-color:#34475d;box-shadow:none
+}
+.navlinks .yt{
+  background:#b92f46;border-color:#d34459;box-shadow:none
+}
+.navlinks .yt:hover{background:#d43b53;border-color:#f05b70}
+.navlinks .dc{box-shadow:none}
+.hero{
+  padding:52px 0 30px;
+  gap:32px;
+  grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr)
+}
+.eyebrow{
+  border-radius:5px;
+  background:#ff52680d;
+  border-color:#ff52684d;
+  color:#ff9baa;
+  box-shadow:none;
+  letter-spacing:.13em
+}
+.dot{box-shadow:0 0 8px #35e6a155}
+.hero h1{
+  font-size:clamp(39px,5.4vw,66px);
+  line-height:.98;
+  letter-spacing:-.058em;
+  margin:19px 0 16px
+}
+.gradient{
+  background:linear-gradient(100deg,#ff6278 0%,#ff8d76 75%,#ffb178 100%);
+  -webkit-background-clip:text;background-clip:text
+}
+.hero p{font-size:14px;line-height:1.85;color:#b5c0d0;max-width:590px}
+.actions{gap:10px;margin-top:25px}
+.btn{
+  border-radius:8px;
+  padding:11px 15px;
+  font-size:12px;
+  letter-spacing:.01em;
+  transition:transform .16s ease,background .16s ease,border-color .16s ease
+}
+.btn:hover{transform:translateY(-1px);box-shadow:none}
+.btn-primary{
+  background:#c9334b;border-color:#e04a60;
+  box-shadow:0 4px 15px #ff526812
+}
+.btn-primary:hover{background:#e0445b;border-color:#fa6b7d;box-shadow:0 5px 18px #ff52681c}
+.btn-quiet{border-color:#344155}
+.hero-panel,.stat,.card,.tier-row,.admin-item,.modal{
+  background:linear-gradient(145deg,#121a26,#0f151f);
+  border-color:#293648;
+  box-shadow:0 8px 26px #00000018
+}
+.hero-panel{
+  border-radius:15px;padding:23px;
+  position:relative;overflow:hidden
+}
+.hero-panel:before{
+  content:"";display:block;position:absolute;top:0;left:20px;right:20px;height:1px;
+  background:linear-gradient(90deg,transparent,#ff6478a6,transparent)
+}
+.panel-head{letter-spacing:.13em}
+.hero-score{font-size:35px;margin:23px 0 5px}
+.hero-small{font-size:12px;line-height:1.75}
+.mini-bars{gap:13px;margin-top:23px}
+.bar{height:7px;background:#263243}
+.bar span{border-radius:99px}
+.stats{gap:12px;margin:18px auto 42px}
+.stat{
+  border-radius:12px;padding:18px 19px;
+  position:relative;overflow:hidden
+}
+.stat:before{
+  content:"";position:absolute;inset:0 auto 0 0;width:2px;
+  background:#3a4d64;opacity:.8
+}
+.stat:hover{border-color:#40516a;transform:translateY(-2px)}
+.stat strong{font-size:clamp(24px,3vw,30px);font-variant-numeric:tabular-nums}
+.stat div:last-child{font-size:10px;letter-spacing:.12em;color:#9eacbf}
+.section{padding:18px 0 36px;scroll-margin-top:90px}
+.section-title{margin-bottom:20px;align-items:flex-end}
+.kicker{font-size:10px;letter-spacing:.18em;color:#ff9aa7}
+.section h2{font-size:clamp(23px,3vw,29px);letter-spacing:-.04em}
+.subtext{font-size:12px;line-height:1.8;color:#a7b4c6}
+.pill{
+  border:1px solid #344155;background:#151e2a;color:#b9c5d5;
+  letter-spacing:.08em;border-radius:6px
+}
+.chips{gap:7px;margin-bottom:14px}
+.chip{
+  border-radius:7px;padding:8px 12px;background:#111a26;
+  border-color:#2e3c50;color:#b9c5d5;transition:all .16s ease
+}
+.chip:hover{border-color:#52667f;color:#fff}
+.chip.on{background:#a82e43;border-color:#d64b60;color:#fff}
+.toolbar{gap:9px;margin-bottom:17px}
+.field{
+  min-height:43px;
+  background:#0b111a;
+  border-color:#303e52;
+  border-radius:8px;
+  color:#f2f5fa;
+  padding:11px 12px
+}
+.field::placeholder{color:#78879b}
+.field:focus{border-color:#72caff;box-shadow:0 0 0 3px #72caff15}
+.search{min-width:220px}
+.toolbar select{min-width:132px}
+.tier-groups{gap:13px}
+.tier-row{
+  grid-template-columns:90px minmax(0,1fr);
+  gap:13px;padding:12px;border-radius:13px;min-height:98px
+}
+.tier-label{border-radius:9px;font-size:25px}
+.tier-label small{font-size:9px;letter-spacing:.09em}
+.tier-S{background:linear-gradient(145deg,#301923,#1b141e);color:#ff8294;border-color:#713747;box-shadow:inset 0 0 0 1px #ff526808}
+.tier-A{background:linear-gradient(145deg,#261f35,#171724);color:#d0b0ff;border-color:#57436f}
+.tier-B{background:linear-gradient(145deg,#142b27,#101d1b);color:#76e4ba;border-color:#2d5b4e}
+.tier-C{background:linear-gradient(145deg,#142738,#101a26);color:#80d1ff;border-color:#31556d}
+.tier-U{background:#19212d;color:#bdc7d5;border-color:#354153}
+.players{gap:9px}
+.player{
+  min-height:62px;padding:11px;gap:11px;
+  border-radius:9px;background:#111a26;border-color:#2b394c;
+  transition:background .16s ease,border-color .16s ease,transform .16s ease
+}
+.player:hover{background:#172333;border-color:#50657e;box-shadow:none;transform:translateY(-1px)}
+.avatar{
+  width:38px;height:38px;flex-basis:38px;border-radius:9px;
+  background:linear-gradient(145deg,#243246,#182231);border-color:#3b4b61
+}
+.pname{font-size:12px;letter-spacing:.005em}
+.pmeta{font-size:10px;color:#9eacbf;line-height:1.5}
+.p-tier{border-radius:6px;background:#192433;border-color:#35465c;padding:6px 7px}
+.empty{border-color:#344357;color:#aab6c7;background:#0d141e}
+.guide{gap:12px}
+.guide .gcard{
+  border-radius:12px;padding:16px;
+  background:#111a26;border:1px solid #2b394c;
+  line-height:1.75
+}
+.guide .gcard b{font-size:19px;margin-bottom:7px}
+.split{gap:16px}
+.card{border-radius:14px;padding:22px}
+.card h3{font-size:15px;letter-spacing:-.015em}
+.formgrid{gap:15px}
+.formfield{gap:7px}
+.formfield label{font-size:10px;letter-spacing:.1em;color:#bdc8d7}
+.hint{font-size:11px;line-height:1.7;color:#9eacbf}
+.notice{border-radius:9px;line-height:1.75}
+.notice.ok{background:#10241f;border-color:#285b4a;color:#a3e8ce}
+.founder{padding:13px 0;border-color:#283547}
+.founder span{color:#a5b1c2}
+.founder b{color:#e6c578}
+.admin{
+  border-color:#58303c;
+  background:linear-gradient(145deg,#1c171f,#101722);
+  border-radius:14px;padding:20px;box-shadow:none
+}
+.admin h2{letter-spacing:-.035em}
+.admin-grid{gap:13px}
+.admin-item{border-radius:11px;padding:15px;background:#111923;border-color:#2b3544}
+.admin-item h4{font-size:12px;letter-spacing:.02em}
+.admin-item .field{margin:5px 0}
+.admin-actions{gap:8px}
+.status{line-height:1.7}
+.rowline{border-color:#2a3544;padding:13px 0}
+details.faq{border-radius:11px;background:#101722;border-color:#293648;overflow:hidden}
+details.faq[open]{border-color:#42536a}
+details.faq summary{padding:16px 17px;line-height:1.6}
+details.faq summary:after{color:#ff7d91}
+details.faq p{line-height:1.85;color:#aab6c7}
+.steps{gap:12px}
+.step{
+  border-radius:12px;padding:18px;background:linear-gradient(145deg,#121a26,#0f151f);
+  border-color:#293648
+}
+.step .num{background:#bd3048;border-radius:8px;box-shadow:none}
+.step b{font-size:13px}
+.step span{line-height:1.75}
+.badges{gap:7px}
+.bdg{border-radius:6px;background:#182332;border-color:#35465a}
+.bdg.v{background:#10241f;border-color:#2b6954;color:#7ee2bd}
+.bdg.t{background:#282111;border-color:#796122;color:#f0cf75}
+.upd{padding:14px 0;border-color:#293648;line-height:1.7}
+.upd .udot{box-shadow:none;background:#72caff}
+.upd small{line-height:1.6;color:#9eacbf}
+.modal-backdrop{background:#03060bdc;backdrop-filter:blur(10px)}
+.modal{border-radius:15px;padding:23px}
+.toast{border-radius:10px;background:#121c29;border-color:#3b4b60}
+.footer{background:#080c13;border-color:#293648;padding:25px 0 32px}
+.footer-links{gap:10px 18px}
+.footer-links a{color:#b0bdcf}
+.footer-links a:hover{color:#fff}
+.totop{border-radius:10px;background:#141e2b;border-color:#3a4a5f}
+.totop:hover{border-color:#667b94}
+.sr{clip-path:inset(50%)}
+
+/* Responsive navigation: retain all links on phones in a scrollable row. */
+@media(max-width:760px){
+  .wrap{width:calc(100% - 28px)}
+  .nav{align-items:center;flex-wrap:wrap;gap:10px;padding:11px 0}
+  .navlinks{
+    width:100%;max-width:100%;justify-content:flex-start;flex-wrap:nowrap;
+    overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;
+    padding:2px 0 7px;gap:5px
+  }
+  .navlinks a,.navlinks button{flex:0 0 auto;font-size:11px;padding:9px 10px}
+  .hero{grid-template-columns:1fr;padding-top:34px;gap:22px}
+  .hero h1{font-size:clamp(39px,9vw,58px)}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:29px}
+  .split{grid-template-columns:1fr}
+  .players{grid-template-columns:1fr}
+  .tier-row{grid-template-columns:76px minmax(0,1fr);gap:10px;padding:10px}
+  .tier-label{font-size:23px}
+  .admin-grid{grid-template-columns:1fr}
+  .section-title{align-items:flex-start}
+  .guide{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:420px){
+  .wrap{width:calc(100% - 22px)}
+  .nav{gap:8px}
+  .brand{gap:8px}
+  .brandmark{width:37px;height:37px}
+  .brandname{font-size:13px}
+  .brandsub{font-size:9px}
+  .navlinks a:not(.yt):not(.dc){display:inline-flex}
+  .hero{padding-top:28px}
+  .hero h1{font-size:clamp(36px,10vw,44px)}
+  .hero-panel,.card{padding:16px}
+  .stat{padding:14px}
+  .stat strong{font-size:23px}
+  .toolbar{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .toolbar .search{grid-column:1/-1;width:100%;min-width:0}
+  .toolbar select{width:100%;min-width:0}
+  .tier-row{grid-template-columns:61px minmax(0,1fr);gap:8px;padding:8px}
+  .tier-label{font-size:20px}
+  .tier-label small{font-size:8px}
+  .guide{gap:8px}
+  .guide .gcard{padding:12px}
+  .formgrid{grid-template-columns:1fr}
+  .formfield.full{grid-column:auto}
+  .admin{padding:13px}
+  .admin-item{padding:12px}
+  .steps{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+
+
+/* =========================================================
+   CNR COMPETITIVE UI — SIGNATURE SYSTEM / V2
+   Refined information hierarchy, restrained signal-red,
+   layered surfaces, crisp dividers and deeper component states.
+   ========================================================= */
+:root{
+  --bg:#070a10;--panel:#0e141e;--panel2:#121b28;--line:#263244;
+  --muted:#9ba9bc;--text:#f3f6fb;--red:#e84b61;--red-soft:#ff7183;
+  --orange:#f0a06b;--gold:#e6c77d;--green:#62d6aa;--blue:#83c8f2;
+  --surface-shadow:0 18px 48px rgba(0,0,0,.22);
+}
+html{background:var(--bg);scroll-padding-top:110px}
+body{
+  background-color:var(--bg);
+  background-image:
+    radial-gradient(ellipse at 50% -18%,rgba(45,63,88,.34),transparent 58%),
+    linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);
+  background-size:auto,32px 32px,32px 32px;
+  color:var(--text);letter-spacing:.005em
+}
+::selection{background:#e84b6140;color:#fff}
+.wrap{width:min(1180px,calc(100% - 44px))}
+.topbar{
+  background:rgba(7,10,16,.91);border-bottom:1px solid #2a3544;
+  box-shadow:0 10px 35px #0004;backdrop-filter:blur(18px) saturate(140%)
+}
+.nav{min-height:76px;padding:12px 0}
+.brand{gap:12px}
+.brandmark{
+  width:43px;height:43px;border-radius:11px;background:#e84b61;
+  box-shadow:0 5px 18px #e84b6126,inset 0 1px 0 #ffffff30;
+  outline:1px solid #ff879633;outline-offset:3px;letter-spacing:-1.4px
+}
+.brandname{font-size:14px;letter-spacing:.11em}
+.brandsub{font-size:9px;letter-spacing:.18em;color:#8493a8}
+.navlinks{gap:4px}
+.navlinks a,.navlinks button{
+  position:relative;border-radius:7px;padding:10px 12px;font-size:11px;
+  letter-spacing:.015em;color:#b8c4d4;transition:background .18s,border-color .18s,color .18s
+}
+.navlinks a:hover,.navlinks button:hover{background:#151f2d;border-color:#2d3d51;box-shadow:none;color:#fff}
+.navlinks .yt{background:#d94056;border-color:#e85b6e;box-shadow:0 5px 16px #e84b6120}
+.navlinks .yt:hover{background:#ed5268;border-color:#ff8795;box-shadow:0 6px 20px #e84b6130}
+.navlinks .dc{background:#303d86;border-color:#4b5ab0;box-shadow:none}
+.hero{padding:65px 0 34px;gap:clamp(24px,4vw,56px);grid-template-columns:minmax(0,1.1fr) minmax(300px,.8fr)}
+.eyebrow{border-radius:5px;padding:8px 11px;background:#e84b610d;border-color:#e84b6144;color:#ff9eaa;font-size:9px;letter-spacing:.16em;box-shadow:none}
+.dot{box-shadow:0 0 0 4px #62d6aa12}
+.hero h1{font-size:clamp(42px,5.4vw,68px);line-height:.99;letter-spacing:-.065em;margin:21px 0 17px;max-width:720px}
+.gradient{background:linear-gradient(100deg,#ff7c8d 0%,#ed596c 52%,#e4a37c 100%);-webkit-background-clip:text;background-clip:text}
+.hero p{max-width:560px;font-size:14px;line-height:1.9;color:#aebacc}
+.actions{gap:10px;margin-top:27px}
+.btn{border-radius:7px;padding:11px 15px;background:#141d2a;border-color:#304055;color:#dfe7f2;font-size:11px;letter-spacing:.015em;transition:transform .18s,border-color .18s,background .18s,box-shadow .18s}
+.btn:hover{transform:translateY(-1px);background:#1a2636;border-color:#52677f;box-shadow:0 7px 20px #0002}
+.btn-primary{background:#df455c;border-color:#ed6175;box-shadow:0 6px 20px #df455c20}
+.btn-primary:hover{background:#ed5268;border-color:#ff8998;box-shadow:0 8px 25px #df455c30}
+.btn-danger{background:#26161d;border-color:#64323e;color:#ff9eac}
+.btn-quiet{background:transparent}
+.hero-panel{
+  position:relative;isolation:isolate;overflow:hidden;border-radius:14px;padding:23px;
+  background:linear-gradient(145deg,rgba(20,29,43,.97),rgba(12,18,28,.98));
+  border-color:#344154;box-shadow:var(--surface-shadow),inset 0 1px 0 #ffffff08
+}
+.hero-panel:before{content:"";position:absolute;z-index:-1;inset:0 0 auto;height:2px;background:linear-gradient(90deg,#e84b61,rgba(232,75,97,.05) 72%,transparent)}
+.hero-panel:after{content:"";position:absolute;z-index:-1;width:230px;height:230px;right:-100px;top:-135px;border:1px solid #e84b611c;border-radius:50%;box-shadow:0 0 0 24px #e84b6107,0 0 0 48px #e84b6105}
+.panel-head{font-size:9px;letter-spacing:.15em;color:#9aa9bd}
+.live{font-size:10px;letter-spacing:.06em}
+.hero-score{font-size:37px;letter-spacing:-.055em;margin:24px 0 5px}
+.hero-small{max-width:330px;line-height:1.8;color:#96a5b9}
+.mini-bars{gap:14px;margin-top:25px}
+.mini-row{grid-template-columns:44px minmax(0,1fr) 24px;gap:12px;font-size:10px;color:#bac7d8}
+.bar{height:5px;background:#263143;border-radius:3px}
+.bar span{background:linear-gradient(90deg,#d9435a,#f18b75);box-shadow:0 0 12px #e84b6125}
+.stats{gap:12px;margin:16px auto 48px}
+.stat{
+  position:relative;overflow:hidden;border-radius:11px;padding:19px 18px;
+  background:linear-gradient(145deg,#111a27,#0d141e);border-color:#293749;
+  box-shadow:inset 0 1px 0 #ffffff05;transition:transform .2s,border-color .2s,background .2s
+}
+.stat:before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:#45536a;transition:background .2s}
+.stat:hover{transform:translateY(-3px);border-color:#46576e;background:linear-gradient(145deg,#152030,#101823)}
+.stat:hover:before{background:var(--red)}
+.stat strong{font-size:27px;font-weight:850;letter-spacing:-.055em}
+.stat div:last-child{font-size:9px;letter-spacing:.14em;color:#8796aa;margin-top:7px}
+.section{padding:17px 0 36px}
+.section-title{margin-bottom:19px;gap:18px}
+.kicker{font-size:9px;letter-spacing:.19em;color:#e78b8f}
+.section h2{font-size:clamp(22px,2.6vw,29px);letter-spacing:-.045em;font-weight:820}
+.subtext{font-size:12px;line-height:1.8;color:#93a2b6;max-width:680px}
+.toolbar{gap:9px;margin-bottom:16px}
+.field{background:#0a111b;border-color:#2a394d;border-radius:7px;padding:11px 12px;color:#eaf0f8;font-size:12px;transition:border-color .18s,box-shadow .18s}
+.field:focus{border-color:#d9586b;box-shadow:0 0 0 3px #e84b6116;outline:none}
+.field::placeholder{color:#69798f}
+.tier-groups{gap:12px}
+.tier-row{
+  position:relative;grid-template-columns:91px minmax(0,1fr);gap:13px;min-height:100px;
+  border-radius:12px;padding:12px;background:linear-gradient(105deg,#101824,#0d141e 65%);
+  border-color:#2a384a;box-shadow:inset 0 1px 0 #ffffff04;transition:border-color .18s,transform .18s
+}
+.tier-row:hover{border-color:#46566a;transform:translateY(-1px)}
+.tier-label{position:relative;border-radius:8px;font-size:28px;letter-spacing:-.06em}
+.tier-label small{font-size:8px;letter-spacing:.12em;text-transform:uppercase;opacity:.86}
+.tier-S{background:linear-gradient(145deg,#3a1d28,#21151d);color:#ff8292;border-color:#e84b6159;box-shadow:inset 0 0 0 1px #ffffff03}
+.tier-A{background:linear-gradient(145deg,#2a2239,#191825);color:#c7a4f4;border-color:#9272be50}
+.tier-B{background:linear-gradient(145deg,#17352e,#101f1d);color:#6bdab4;border-color:#4dbb9250}
+.tier-C{background:linear-gradient(145deg,#172d40,#111b29);color:#82c9f2;border-color:#5a9ac550}
+.tier-U{background:linear-gradient(145deg,#202a38,#151d28);color:#b4c0d0;border-color:#53617650}
+.players{gap:9px}
+.player{gap:12px;padding:11px 12px;border-radius:9px;background:#111a27;border-color:#263649;transition:transform .18s,border-color .18s,background .18s;box-shadow:inset 0 1px 0 #ffffff03}
+.player:hover{transform:translateY(-1px);background:#172333;border-color:#52647a;box-shadow:0 7px 18px #0002}
+.avatar{width:39px;height:39px;flex-basis:39px;border-radius:9px;background:linear-gradient(145deg,#29384b,#172131);border-color:#3a4d64;color:#f0f4fa}
+.pname{font-size:12px;font-weight:800;letter-spacing:.005em}
+.pmeta{font-size:10px;color:#8999ad;margin-top:5px}
+.p-tier{background:#1a2635;border-color:#33475d;border-radius:5px;font-size:8px;letter-spacing:.04em;color:#c7d4e4}
+.empty{background:#0d141e;border-color:#334256;color:#8e9eb2;line-height:1.8}
+.guide{gap:12px}
+.guide .gcard{position:relative;overflow:hidden;border-radius:11px;padding:17px;background:linear-gradient(145deg,#121b28,#0e151f);border:1px solid #29384a;color:#aebacc;line-height:1.8}
+.guide .gcard:before{content:"";position:absolute;top:0;left:16px;right:16px;height:1px;background:linear-gradient(90deg,#e84b6170,transparent)}
+.guide .gcard b{font-size:23px;letter-spacing:-.055em;color:#f2f5fa;margin-bottom:7px}
+.split{gap:16px}
+.card{border-radius:13px;padding:22px;background:linear-gradient(145deg,#121b28,#0d141e);border-color:#2b394b;box-shadow:0 12px 35px #00013,inset 0 1px 0 #ffffff05}
+.card h3{font-size:15px;letter-spacing:-.015em;margin-bottom:8px}
+.formgrid{gap:14px}
+.formfield label{font-size:9px;letter-spacing:.13em;color:#9caabe}
+.hint{font-size:10px;color:#8d9db2;line-height:1.8}
+.notice{border-radius:8px;background:#26171c;border-color:#63313d;color:#f0a5b0;line-height:1.8}
+.notice.ok{background:#10221e;border-color:#285b4a;color:#8de0bd}
+.founder{padding:14px 0;border-color:#283648;font-size:11px}
+.founder span{color:#8f9fb3}
+.founder b{color:#e6c77d}
+.admin{border-radius:13px;padding:21px;background:linear-gradient(145deg,#19171f,#111722);border-color:#60303d;box-shadow:0 14px 40px #0002}
+.admin h2{font-size:18px;letter-spacing:-.03em}
+.admin-grid{gap:13px}
+.admin-item{border-radius:10px;padding:15px;background:#101823;border-color:#303c4e;box-shadow:none}
+.admin-item h4{font-size:11px;letter-spacing:.04em;color:#dbe3ed}
+.rowline{border-color:#29384a;padding:13px 0}
+.badges{gap:7px}
+.bdg{border-radius:5px;background:#172231;border-color:#34465b;color:#cad6e5}
+.bdg.v{background:#10231e;border-color:#2b6652;color:#78dcb6}
+.bdg.t{background:#272114;border-color:#6e5b2c;color:#e6c77d}
+.upd{border-color:#29384a;padding:15px 0}
+.upd .udot{background:#83c8f2;box-shadow:0 0 0 4px #83c8f20c}
+.steps{gap:12px}
+.step{border-radius:12px;padding:18px;background:linear-gradient(145deg,#121b28,#0e151f);border-color:#29384a;box-shadow:inset 0 1px 0 #ffffff04}
+.step .num{background:#d9445b;border-radius:7px;box-shadow:none}
+.step b{font-size:13px;letter-spacing:-.01em}
+.step span{line-height:1.8;color:#95a5b9}
+details.faq{background:#0e151f;border-color:#2a394b;border-radius:9px;transition:border-color .18s}
+details.faq:hover,details.faq[open]{border-color:#4a5a70}
+details.faq summary{padding:16px;font-size:12px;color:#e1e8f1}
+details.faq summary:after{color:#ed7989;font-size:16px}
+details.faq p{padding:0 16px 16px;color:#9aa9bc;line-height:1.85}
+.chips{gap:7px;margin-bottom:14px}
+.chip{border-radius:6px;background:#111b28;border-color:#2d3d51;padding:8px 12px;font-size:10px;color:#aebacc}
+.chip:hover{border-color:#6b7b91;color:#fff}
+.chip.on{background:#d9445b;border-color:#eb6377;color:#fff;box-shadow:0 4px 14px #d9445b18}
+.rules{font-size:12px;line-height:2;color:#b0bdce}
+.modal-backdrop{background:rgba(2,5,10,.82);backdrop-filter:blur(12px)}
+.modal{border-radius:14px;padding:25px;background:linear-gradient(145deg,#151f2d,#0d141e);border-color:#3a4b60;box-shadow:0 25px 90px #0009,inset 0 1px 0 #ffffff07}
+.modal h3{font-size:18px;letter-spacing:-.03em}
+.modal p{color:#9eacc0;line-height:1.85}
+.toast{border-radius:9px;background:#121c29;border-color:#405269;box-shadow:0 14px 40px #0008}
+.footer{background:rgba(7,10,16,.96);border-color:#263345;padding:29px 0 34px;color:#8392a7}
+.footer-links{gap:12px 20px}
+.footer-links a{color:#a6b3c5;transition:color .15s}
+.footer-links a:hover{color:#ff8a98}
+.totop{border-radius:10px;background:#111a27;border-color:#35465b;box-shadow:0 8px 25px #0005}
+.totop:hover{border-color:#8a5360;color:#ff9eaa}
+:focus-visible{outline:2px solid #e96a7b!important;outline-offset:3px}
+button:disabled{filter:saturate(.65)}
+@media(max-width:760px){
+  .wrap{width:calc(100% - 30px)}
+  .nav{min-height:unset;padding:11px 0}
+  .hero{padding:43px 0 24px;gap:22px}
+  .hero-panel{padding:20px}
+  .stats{gap:9px;margin-bottom:35px}
+  .stat{padding:16px 15px}
+  .section{padding:13px 0 29px}
+  .section-title{margin-bottom:15px}
+  .tier-row{grid-template-columns:72px minmax(0,1fr);gap:10px;padding:9px}
+  .guide{gap:9px}
+  .guide .gcard{padding:14px}
+  .card{padding:18px}
+  .admin{padding:16px}
+}
+@media(max-width:420px){
+  .wrap{width:calc(100% - 22px)}
+  .hero{padding-top:32px}
+  .hero h1{font-size:clamp(36px,10vw,45px)}
+  .hero p{font-size:13px;line-height:1.85}
+  .hero-panel{padding:17px}
+  .stat{padding:14px 12px}
+  .stat strong{font-size:23px}
+  .tier-row{grid-template-columns:57px minmax(0,1fr);gap:8px;padding:7px}
+  .tier-label{font-size:20px}
+  .player{padding:10px;gap:9px}
+  .avatar{width:35px;height:35px;flex-basis:35px}
+  .p-tier{padding:4px 5px}
+  .guide .gcard{padding:12px;font-size:10px}
+  .guide .gcard b{font-size:20px}
+  .card{padding:15px}
+  .modal{padding:19px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+
+
+/* CNR / DEEP UI PASS — editorial esports dashboard, sharp and readable */
+:root{--bg:#070a11;--panel:#0d1420;--panel2:#111b2a;--line:#26364b;--muted:#9eacc0;--text:#f4f7fc;--accent:#ff536d;--accent2:#ff946e;--cyan:#64d9ff;--grid:rgba(127,157,194,.055)}
+html{scroll-padding-top:96px;scrollbar-color:#34465e #080c13;scrollbar-width:thin}
+body{background-color:var(--bg);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px),radial-gradient(ellipse at 12% -12%,#192b43 0,transparent 43%),radial-gradient(ellipse at 98% 25%,#27121f 0,transparent 31%);background-size:36px 36px,36px 36px,auto,auto;background-attachment:fixed;color:#f4f7fc;letter-spacing:.005em}
+::selection{background:#ff536d55;color:#fff}
+.wrap{width:min(1200px,calc(100% - 48px))}
+.topbar{background:rgba(6,10,17,.88);border-bottom:1px solid #29364a;box-shadow:0 12px 35px #0003;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.nav{min-height:76px;padding:13px 0}
+.brandmark{width:44px;height:44px;border-radius:12px;position:relative;isolation:isolate;background:linear-gradient(145deg,#ff657b,#c62e49);box-shadow:0 0 0 1px #ff8d9d55,inset 0 1px #ffffff40,0 0 24px #ff405b22}
+.brandmark:after{content:"";position:absolute;inset:5px;border:1px solid #ffffff55;border-radius:8px;pointer-events:none}
+.brandname{font-size:14px;letter-spacing:.14em}.brandsub{font-size:9px;letter-spacing:.19em;text-transform:uppercase;margin-top:4px}
+.navlinks a,.navlinks button{font-size:11px;letter-spacing:.035em;padding:10px 12px;color:#b8c5d7;border-radius:7px}
+.navlinks a:hover,.navlinks button:hover{background:#151f2d;border-color:#3a4c64;color:#fff}
+.navlinks .yt{background:#c7354e;border-color:#e65a70;color:#fff;box-shadow:0 0 22px #ff405b18}
+.hero{position:relative;isolation:isolate;padding:clamp(55px,8vw,100px) 0 43px;gap:clamp(28px,5vw,68px);grid-template-columns:minmax(0,1.08fr) minmax(320px,.78fr);min-height:410px}
+.hero:before{content:"CNR / COMPETITIVE DIVISION";position:absolute;top:28px;right:0;color:#63748c;font-size:9px;letter-spacing:.23em;font-weight:800;opacity:.8}
+.hero:after{content:"";position:absolute;z-index:-1;right:5%;top:12%;width:310px;height:310px;border:1px solid #ff637514;border-radius:50%;box-shadow:0 0 0 32px #ff637508,0 0 0 68px #ff637505;pointer-events:none}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 11px;border-radius:5px;background:#ff536d0c;border:1px solid #ff536d3d;color:#ff9aa9;font-size:9px;font-weight:850;letter-spacing:.17em;text-transform:uppercase}
+.eyebrow .dot{width:6px;height:6px;background:#ff6379;box-shadow:0 0 13px #ff536d;flex:0 0 auto}
+.hero h1{font-size:clamp(48px,6.7vw,84px);line-height:.91;letter-spacing:-.075em;margin:25px 0 22px;font-weight:950;text-wrap:balance}
+.gradient{background:linear-gradient(100deg,#ff5d76 0%,#ff796f 49%,#ffc08b 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 5px 24px #ff536d14)}
+.hero p{font-size:14px;line-height:1.95;max-width:540px;color:#aab8cb}
+.actions{gap:9px;margin-top:28px;flex-wrap:wrap}
+.btn{min-height:42px;display:inline-flex;align-items:center;justify-content:center;border-radius:7px;padding:11px 15px;font-size:11px;font-weight:800;letter-spacing:.015em;border:1px solid #34455b;background:#101a28;color:#dce6f5}
+.btn-primary{background:linear-gradient(105deg,#d83a54,#f05269);border-color:#ff6c81;color:#fff;box-shadow:0 7px 25px #ff405b20,inset 0 1px #ffffff2b}
+.btn-primary:hover{background:linear-gradient(105deg,#ed4560,#ff6b7f);box-shadow:0 9px 28px #ff405b28}
+.btn-quiet{background:#0d1521;border-color:#35445a}
+.hero-panel{border-radius:14px;padding:25px;position:relative;background:linear-gradient(145deg,#121c2b,#0b111b 75%);border-color:#34445b;box-shadow:0 22px 65px #0003,inset 0 1px #ffffff08}
+.hero-panel:after{content:"ROSTER INTELLIGENCE";position:absolute;right:20px;bottom:16px;font-size:8px;letter-spacing:.2em;color:#53647b;font-weight:800}
+.hero-panel:before{left:20px;right:20px;height:2px;background:linear-gradient(90deg,#ff536d, #ff956f 34%,#64d9ff 72%,transparent);opacity:.9}
+.panel-head{font-size:9px;letter-spacing:.15em;color:#9eacc0;text-transform:uppercase}
+.live{border:1px solid #245a4c;background:#0d251f;padding:6px 8px;border-radius:5px;color:#81e5c2;font-size:8px;letter-spacing:.11em}
+.live .dot{background:#42e0a7;box-shadow:0 0 10px #42e0a7}
+.hero-score{font-size:clamp(38px,4vw,48px);letter-spacing:-.065em;font-variant-numeric:tabular-nums;margin:24px 0 7px}
+.hero-small{max-width:310px;color:#9eacc0;font-size:11px;line-height:1.8}
+.mini-bars{gap:15px;margin-top:26px}.mini-row{font-size:10px;letter-spacing:.04em}.bar{height:5px;background:#202c3d;overflow:hidden}.bar span{box-shadow:0 0 12px currentColor}
+.stats{gap:10px;margin:8px auto 55px}
+.stat{border-radius:9px;padding:19px 20px;background:linear-gradient(110deg,#101927,#0b111b);border-color:#28374a;box-shadow:inset 0 1px #ffffff05;transition:transform .2s,border-color .2s,background .2s}
+.stat:before{width:2px;background:linear-gradient(180deg,#ff6379,#ff946e 50%,transparent);opacity:1}
+.stat:after{content:"";position:absolute;right:0;top:0;width:42px;height:42px;border-top:1px solid #ffffff0a;border-right:1px solid #ffffff0a;pointer-events:none}
+.stat:hover{transform:translateY(-3px);border-color:#4a5c74;background:linear-gradient(110deg,#131f30,#0c131f)}
+.stat strong{font-size:clamp(26px,3vw,34px);letter-spacing:-.055em;line-height:1.1;color:#f5f8ff}
+.stat div:last-child{margin-top:7px;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:#8f9fb4}
+.section{padding:25px 0 44px;scroll-margin-top:105px;position:relative}
+.section:not(:first-of-type):before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,#34445a,transparent 75%);opacity:.55}
+.section-title{margin-bottom:23px;gap:18px}
+.kicker{display:flex;align-items:center;gap:9px;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:#ff8b9b;font-weight:850}
+.kicker:before{content:"";width:19px;height:1px;background:#ff647b;box-shadow:0 0 8px #ff536d55}
+.section h2{font-size:clamp(25px,3.5vw,35px);line-height:1.08;letter-spacing:-.055em;margin:9px 0 8px;font-weight:900}
+.subtext{font-size:12px;line-height:1.8;color:#9eacc0;max-width:650px}
+.pill{border-radius:5px;background:#111b29;border-color:#34445a;color:#b8c7d9;padding:7px 10px;font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.13em}
+.chips{gap:7px;margin-bottom:13px}.chip{padding:9px 12px;border-radius:6px;background:#0e1723;border-color:#29394d;color:#aebdd0;font-size:10px;font-weight:800;letter-spacing:.025em}.chip.on{background:#702536;border-color:#df4c64;color:#fff;box-shadow:inset 0 0 0 1px #ff87951c}.chip:focus-visible,.btn:focus-visible,.navlinks a:focus-visible,.navlinks button:focus-visible{outline:2px solid #70d7ff;outline-offset:3px}
+.toolbar{gap:9px;margin-bottom:18px}.field{min-height:45px;border-radius:7px;background:#090f18;border-color:#2b3b50;padding:12px 13px;color:#edf4ff;font-size:12px}.field:focus{border-color:#6bd5ff;box-shadow:0 0 0 3px #64d9ff12}.field::placeholder{color:#687b93}
+.tier-groups{gap:14px}.tier-row{grid-template-columns:90px minmax(0,1fr);gap:14px;padding:13px;border-radius:11px;background:linear-gradient(100deg,#101927,#0b111a);border-color:#29394d;box-shadow:inset 0 1px #ffffff04;transition:border-color .2s,transform .2s}.tier-row:hover{border-color:#4a5d75;transform:translateY(-1px)}
+.tier-label{border-radius:8px;font-size:26px;letter-spacing:-.06em;box-shadow:inset 0 1px #ffffff13,0 5px 18px #0002}.tier-label small{font-size:8px;letter-spacing:.15em;text-transform:uppercase}
+.tier-S{background:linear-gradient(145deg,#381923,#1d121b);color:#ff8598;border-color:#794051}.tier-A{background:linear-gradient(145deg,#29213b,#171624);color:#d0b0ff;border-color:#5d4b78}.tier-B{background:linear-gradient(145deg,#142e29,#101c1b);color:#79e6bc;border-color:#326858}.tier-C{background:linear-gradient(145deg,#142b3c,#101924);color:#83d4ff;border-color:#345a75}.tier-U{background:#192331;color:#c3cede;border-color:#3a4a5e}
+.players{gap:9px}.player{min-height:66px;border-radius:8px;background:#0d1622;border-color:#27384d;padding:12px;gap:12px;transition:transform .18s,border-color .18s,background .18s}.player:hover{transform:translateY(-2px);background:#142133;border-color:#4a647f;box-shadow:0 8px 20px #0002}.avatar{width:40px;height:40px;flex-basis:40px;border-radius:9px;background:linear-gradient(145deg,#23354b,#121c2b);border-color:#40536b}.pname{font-size:12px;font-weight:850;color:#edf4ff}.pmeta{font-size:10px;color:#8497af}.p-tier{font-size:9px;font-weight:850;letter-spacing:.08em;border-radius:5px;background:#192536;border-color:#354b64;color:#d9e6f7}
+.card,.guide .gcard,.step{background:linear-gradient(145deg,#111b29,#0b111a);border-color:#2b3b50;box-shadow:inset 0 1px #ffffff04;border-radius:12px}.card{padding:clamp(17px,2.5vw,25px)}.card h3{font-size:15px;letter-spacing:-.025em}.guide .gcard{padding:19px}.guide .gcard b{font-size:21px;letter-spacing:-.04em}.split{gap:17px}.formfield label{font-size:9px;font-weight:850;letter-spacing:.15em;text-transform:uppercase;color:#b4c2d5}.hint,.notice{font-size:11px;line-height:1.8}.admin{border-color:#623443;background:linear-gradient(145deg,#1b151f,#0c131e);box-shadow:0 16px 40px #0002}.admin-item{background:#0d1520;border-color:#2c3b4d}.admin h2{font-size:clamp(23px,3vw,30px)}
+details.faq{background:#0d1520;border-color:#2b3a4d;border-radius:9px}details.faq[open]{border-color:#4b5d73}details.faq summary{font-size:12px;font-weight:800;padding:17px 18px}details.faq p{font-size:12px;line-height:1.9;padding:0 18px 16px;color:#9eacc0}
+.step{padding:20px}.step .num{background:#a92e45;border:1px solid #e25168}.step b{font-size:13px}.step span{font-size:11px;color:#9eacc0;line-height:1.85}
+.footer{background:rgba(5,8,13,.94);border-top:1px solid #29384a;padding:28px 0 35px}.footer-links a{font-size:11px}.totop{background:#101a27;border-color:#35465b}
+.modal{background:#0e1723;border-color:#394a60;box-shadow:0 30px 90px #0009}.modal-backdrop{background:#03060bdc;backdrop-filter:blur(14px)}.toast{background:#111c2a;border-color:#43546b}
+/* fine motion; no excessive parallax or unreadable glow */
+@media(prefers-reduced-motion:no-preference){.hero-panel{animation:panelLift .65s cubic-bezier(.2,.7,.2,1) both}.hero>div:first-child{animation:heroEnter .55s ease-out both}@keyframes panelLift{from{opacity:.5;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}@keyframes heroEnter{from{opacity:.5;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}}
+@media(max-width:760px){.wrap{width:calc(100% - 30px)}.hero{padding-top:57px;gap:23px;min-height:0}.hero:before{top:20px;font-size:8px}.hero:after{right:-50px;top:10%;width:220px;height:220px}.hero h1{font-size:clamp(45px,10.4vw,66px)}.hero-panel{padding:21px}.stats{margin:9px auto 35px;gap:9px}.stat{padding:16px}.section{padding:22px 0 34px}.tier-row{grid-template-columns:75px minmax(0,1fr);gap:10px;padding:10px}.tier-label{font-size:23px}}
+@media(max-width:420px){.wrap{width:calc(100% - 22px)}.nav{min-height:unset}.brandmark{width:36px;height:36px}.hero{padding-top:49px}.hero:before{font-size:7px;letter-spacing:.14em}.hero h1{font-size:clamp(39px,11vw,48px);margin:21px 0 16px}.hero p{font-size:12px}.actions .btn{padding:10px 11px;font-size:10px}.hero-panel{padding:17px}.hero-score{font-size:36px}.stat{padding:13px 12px}.stat strong{font-size:24px}.stat div:last-child{font-size:8px;letter-spacing:.09em}.section h2{font-size:25px}.tier-row{grid-template-columns:58px minmax(0,1fr);gap:8px;padding:8px}.tier-label{font-size:20px}.player{padding:9px;gap:9px}.avatar{width:35px;height:35px;flex-basis:35px}.pname{font-size:11px}.pmeta{font-size:9px}.p-tier{padding:5px;font-size:8px}.guide .gcard{padding:12px}.card{padding:15px}}
+
+
+
+/* =========================================================
+   CNR CLAN — CINEMATIC LIVE INTERFACE / visual enhancement
+   Preserves existing IDs, roster logic, forms and admin actions.
+   ========================================================= */
+:root{--cnr-red:#ff5268;--cnr-amber:#ff9b72;--cnr-cyan:#78d8ff;--cnr-glass:rgba(15,22,34,.78)}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{position:relative;isolation:isolate;overflow-x:hidden;background:#070a11}
+body::before{content:"";position:fixed;inset:0;z-index:-3;pointer-events:none;background:
+ radial-gradient(ellipse at 13% 12%,rgba(37,69,105,.36),transparent 33%),
+ radial-gradient(ellipse at 88% 21%,rgba(111,31,55,.22),transparent 29%),
+ radial-gradient(ellipse at 60% 85%,rgba(29,58,84,.18),transparent 38%),
+ linear-gradient(145deg,#080c14 0%,#090d16 46%,#070a11 100%);background-size:140% 140%;animation:cnrAtmosphere 22s ease-in-out infinite alternate}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.17;background-image:linear-gradient(rgba(131,161,198,.075) 1px,transparent 1px),linear-gradient(90deg,rgba(131,161,198,.075) 1px,transparent 1px);background-size:54px 54px;mask-image:linear-gradient(to bottom,black,transparent 82%)}
+@keyframes cnrAtmosphere{0%{background-position:0% 0%}100%{background-position:100% 80%}}
+#cnr-live-bg{position:fixed;inset:0;width:100%;height:100%;z-index:-2;pointer-events:none;opacity:.72}
+.cnr-progress{position:fixed;z-index:60;top:0;left:0;width:100%;height:2px;pointer-events:none;background:transparent}
+.cnr-progress span{display:block;width:0;height:100%;background:linear-gradient(90deg,#ff5268,#ff9b72,#78d8ff);box-shadow:0 0 12px #ff526899;transition:width .08s linear}
+.topbar{background:rgba(7,10,17,.78);border-bottom-color:rgba(116,142,177,.2);box-shadow:0 12px 40px rgba(0,0,0,.25);backdrop-filter:blur(22px) saturate(140%);-webkit-backdrop-filter:blur(22px) saturate(140%)}
+.topbar::after{content:"";display:block;height:1px;background:linear-gradient(90deg,transparent,rgba(255,82,104,.55),rgba(120,216,255,.24),transparent);opacity:.7}
+.brandmark{position:relative;overflow:hidden;box-shadow:0 0 0 1px #ff82921a,0 7px 28px #ff52682b,inset 0 1px 0 #ffffff35}
+.brandmark::after{content:"";position:absolute;top:-60%;left:-80%;height:220%;width:45%;transform:rotate(25deg);background:linear-gradient(90deg,transparent,#ffffff50,transparent);animation:cnrShine 7s ease-in-out infinite}
+@keyframes cnrShine{0%,68%,100%{left:-80%}82%{left:150%}}
+.hero{position:relative;padding-top:clamp(48px,7vw,88px);padding-bottom:46px;gap:clamp(24px,4vw,56px)}
+.hero::before{content:"CNR / COMPETITIVE DIVISION";position:absolute;top:27px;right:0;color:#aabbd01a;font-size:10px;font-weight:900;letter-spacing:.22em}
+.hero h1{text-wrap:balance;text-shadow:0 8px 45px #0007}
+.hero .gradient{background-image:linear-gradient(100deg,#ff5d74 0%,#ff8e80 40%,#ffc18b 67%,#ff667f 100%);background-size:220% auto;animation:cnrGradientFlow 9s ease-in-out infinite alternate}
+@keyframes cnrGradientFlow{from{background-position:0% center}to{background-position:100% center}}
+.eyebrow{background:rgba(255,82,104,.075);border-color:#ff52685a;box-shadow:inset 0 0 22px #ff526807,0 0 32px #ff52680a;backdrop-filter:blur(8px)}
+.hero-panel,.stat,.card,.tier-row,.admin-item,.modal,.step,details.faq{background:linear-gradient(145deg,rgba(19,28,42,.88),rgba(11,17,27,.84));border-color:rgba(111,136,169,.24);box-shadow:0 14px 44px rgba(0,0,0,.2),inset 0 1px 0 rgba(255,255,255,.025);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.hero-panel{border-radius:18px;box-shadow:0 24px 70px #0003,inset 0 1px 0 #ffffff08;transform:translateZ(0)}
+.hero-panel::after{content:"";position:absolute;inset:auto -20% -75% 15%;height:190px;background:radial-gradient(ellipse,rgba(255,82,104,.12),transparent 68%);pointer-events:none}
+.hero-panel:before{height:2px;left:8%;right:8%;opacity:.8;background:linear-gradient(90deg,transparent,#ff6478,rgba(120,216,255,.65),transparent)}
+.panel-head,.hero-score,.hero-small,.mini-bars{position:relative;z-index:1}
+.stat{transition:transform .24s ease,border-color .24s ease,background .24s ease;overflow:hidden}
+.stat::after{content:"";position:absolute;width:90px;height:90px;right:-42px;top:-48px;border-radius:50%;background:radial-gradient(circle,#78d8ff15,transparent 70%);transition:transform .35s ease}
+.stat:hover{transform:translateY(-4px);border-color:#ff52684d;background:linear-gradient(145deg,rgba(26,34,49,.94),rgba(12,18,28,.9))}
+.stat:hover::after{transform:scale(1.8)}
+.section{position:relative}
+.section-title{gap:18px}
+.section h2{letter-spacing:-.045em}
+.kicker{display:flex;align-items:center;gap:9px}
+.kicker::before{content:"";width:19px;height:1px;background:var(--cnr-red);box-shadow:0 0 9px #ff526877}
+.card,.tier-row,.player,.step,details.faq,.admin,.modal{transition:border-color .22s ease,background .22s ease,transform .22s ease,box-shadow .22s ease}
+.tier-row{position:relative;overflow:hidden}
+.tier-row::after{content:"";position:absolute;top:0;bottom:0;left:0;width:2px;background:linear-gradient(180deg,transparent,var(--cnr-red),transparent);opacity:.75}
+.tier-row:hover{transform:translateY(-2px);border-color:#62758f;box-shadow:0 16px 38px #0003}
+.player{border-color:rgba(105,131,164,.22);background:linear-gradient(135deg,rgba(19,30,46,.9),rgba(12,19,29,.9));border-radius:10px;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.player:hover{transform:translateY(-2px);border-color:#ff52686b;background:linear-gradient(135deg,#1a2638,#111a28);box-shadow:0 9px 24px #0003,0 0 0 1px #ff52680a}
+.avatar{box-shadow:inset 0 1px 0 #ffffff15,0 4px 14px #0002}
+.btn,.chip,.navlinks a,.navlinks button,.totop{transition:transform .2s ease,border-color .2s ease,background .2s ease,box-shadow .2s ease}
+.btn-primary{position:relative;overflow:hidden;box-shadow:0 7px 25px #ff52681c,inset 0 1px 0 #ffffff26}
+.btn-primary::after{content:"";position:absolute;inset:0;transform:translateX(-120%);background:linear-gradient(105deg,transparent,rgba(255,255,255,.16),transparent);transition:transform .6s ease}
+.btn-primary:hover::after{transform:translateX(120%)}
+.btn:hover,.chip:hover,.totop:hover{transform:translateY(-2px)}
+.field{background:rgba(7,13,22,.78);border-color:rgba(113,139,173,.3);transition:border-color .18s ease,box-shadow .18s ease,background .18s ease}
+.field:focus{background:rgba(9,16,27,.98);border-color:#78d8ff;box-shadow:0 0 0 3px #78d8ff13,0 0 24px #78d8ff0a}
+.admin{background:linear-gradient(145deg,rgba(35,20,30,.92),rgba(14,19,30,.93));box-shadow:0 18px 60px #0003,inset 0 1px 0 #ffffff09}
+.modal-backdrop{background:rgba(2,5,10,.78);backdrop-filter:blur(15px) saturate(120%)}
+.toast{backdrop-filter:blur(16px);border-color:#60728b66;box-shadow:0 16px 55px #0007}
+.footer{background:rgba(6,9,15,.74);backdrop-filter:blur(12px);border-top-color:#6b809b30}
+#toTop{border-color:#7187a44d;background:rgba(18,28,42,.9);backdrop-filter:blur(12px);box-shadow:0 8px 26px #0004}
+/* soft entrance for content, without hiding anything when JS is disabled */
+@media (prefers-reduced-motion:no-preference){
+ .stats .stat{animation:cnrRise .65s both;animation-delay:calc(var(--i,0)*70ms)}
+ .stats .stat:nth-child(1){--i:1}.stats .stat:nth-child(2){--i:2}.stats .stat:nth-child(3){--i:3}.stats .stat:nth-child(4){--i:4}
+ @keyframes cnrRise{from{opacity:.4;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+}
+@media(max-width:760px){.hero::before{top:12px;font-size:8px;letter-spacing:.12em}.hero{padding-top:48px}.hero-panel{border-radius:14px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}#cnr-live-bg{opacity:.40}}
+
+
+/* CNR VISUAL FIX v2 — intentionally stronger and visible on mobile */
+html{scrollbar-color:#ff5268 #090e17}
+body{isolation:isolate;background:#070a11;}
+body::before{z-index:-3!important;opacity:1!important;background:
+ radial-gradient(ellipse at 12% 18%,rgba(255,50,83,.17),transparent 34%),
+ radial-gradient(ellipse at 86% 22%,rgba(65,133,201,.19),transparent 34%),
+ radial-gradient(ellipse at 55% 95%,rgba(139,52,101,.13),transparent 42%),
+ linear-gradient(135deg,#070a11 0%,#0b1220 48%,#080b13 100%)!important;
+ background-size:160% 160%!important;animation:cnrAtmosphere 18s ease-in-out infinite alternate!important;}
+body::after{z-index:-1!important;opacity:.26!important;background-size:42px 42px!important;}
+#cnr-live-bg{position:fixed!important;inset:0!important;width:100vw!important;height:100vh!important;height:100dvh!important;display:block!important;z-index:1!important;pointer-events:none!important;opacity:.72!important;mix-blend-mode:screen!important;will-change:contents;}
+.cnr-progress{position:fixed!important;z-index:9999!important;top:0!important;left:0!important;width:100%!important;height:3px!important;display:block!important;background:rgba(255,255,255,.045)!important;box-shadow:0 1px 12px rgba(255,82,104,.18)!important;}
+.cnr-progress span{height:100%!important;min-width:0!important;background:linear-gradient(90deg,#ff3158 0%,#ff8b58 45%,#7ddcff 100%)!important;box-shadow:0 0 15px rgba(255,82,104,.85),0 0 28px rgba(125,220,255,.28)!important;transition:width .06s linear!important;}
+/* Keep page content above the decorative canvas. */
+.topbar,main.wrap,body>footer,body>noscript{position:relative;z-index:2;}
+body>.cnr-progress{z-index:9999!important}
+.topbar{background:rgba(7,10,17,.70)!important;backdrop-filter:blur(24px) saturate(155%)!important;-webkit-backdrop-filter:blur(24px) saturate(155%)!important;border-bottom:1px solid rgba(151,178,213,.22)!important;}
+/* More evident glass surfaces: contrast remains high for readability. */
+.hero-panel,.stat,.card,.gcard,.tier-row,.player,.guide .gcard,.admin,.modal,.modal-card,.section-card,.faq,details.faq,.application-card,.toolbar,.ranking-panel,.empty-state{
+ background:linear-gradient(145deg,rgba(24,35,53,.84),rgba(10,17,29,.82))!important;
+ border:1px solid rgba(139,167,203,.24)!important;
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 16px 44px rgba(0,0,0,.22)!important;
+ backdrop-filter:blur(16px) saturate(125%);-webkit-backdrop-filter:blur(16px) saturate(125%);
+}
+.hero-panel{position:relative;overflow:hidden!important;border-color:rgba(255,82,104,.35)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 0 0 1px rgba(255,82,104,.05),0 20px 60px rgba(0,0,0,.36),0 0 34px rgba(255,64,91,.09)!important;}
+.hero-panel::before,.card::before,.stat::before{content:"";position:absolute;pointer-events:none;inset:0;border-radius:inherit;background:linear-gradient(115deg,rgba(255,255,255,.055),transparent 28%,transparent 72%,rgba(120,216,255,.035));}
+.stat,.card,.player,.tier-row,.gcard,.btn,.chip,.navlinks a,.navlinks button,.hero-panel{transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease,background-color .22s ease!important;}
+.player:hover,.tier-row:hover,.card:hover,.gcard:hover,.stat:hover{transform:translateY(-3px);border-color:rgba(255,82,104,.48)!important;box-shadow:0 18px 46px rgba(0,0,0,.30),0 0 22px rgba(255,82,104,.09)!important;}
+.btn:hover,.chip:hover,.navlinks a:hover,.navlinks button:hover{transform:translateY(-2px);filter:brightness(1.13);}
+.btn:active,.chip:active,.navlinks a:active,.navlinks button:active{transform:translateY(0) scale(.985);}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #83ddff!important;outline-offset:3px!important;}
+.brandmark{position:relative;overflow:hidden;box-shadow:0 0 0 1px rgba(255,255,255,.1),0 0 28px rgba(255,64,91,.38)!important;}
+.hero h1{text-shadow:0 0 34px rgba(255,64,91,.12);}
+@keyframes cnrAtmosphere{0%{background-position:0% 20%}100%{background-position:100% 80%}}
+@media(max-width:760px){#cnr-live-bg{opacity:.55!important}.hero-panel,.stat,.card,.gcard,.tier-row,.player,.admin{backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}}
+@media(prefers-reduced-motion:reduce){body::before{animation:cnrAtmosphere 30s ease-in-out infinite alternate!important}#cnr-live-bg{opacity:.40!important}.stat,.card,.player,.tier-row,.gcard,.btn,.chip,.navlinks a,.navlinks button,.hero-panel{transition:none!important}}
+
+
+/* CNR V3 — richer cinematic ambience, restrained enough for a ranking site. */
+body::before{background-size:180% 180%!important;animation:cnrAtmosphere 26s cubic-bezier(.45,0,.55,1) infinite alternate!important}
+body::after{opacity:.20!important;background-image:linear-gradient(rgba(131,161,198,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(131,161,198,.06) 1px,transparent 1px)!important;background-size:48px 48px!important}
+.hero-panel{isolation:isolate}
+.hero-panel::after{animation:cnrPanelGlow 8s ease-in-out infinite alternate}
+@keyframes cnrPanelGlow{from{opacity:.55;transform:translate3d(-2%,0,0) scale(.92)}to{opacity:1;transform:translate3d(3%,-5px,0) scale(1.08)}}
+@media(max-width:760px){body::after{background-size:36px 36px!important}#cnr-live-bg{opacity:.63!important}}
+@media(prefers-reduced-motion:reduce){body::before{animation:none!important}.hero-panel::after{animation:none!important}}
+
+
+
+/* CNR PREMIUM FINISH — editorial polish, responsive spotlight, and gentle reveal */
+:root{--cnr-line:rgba(158,183,215,.2);--cnr-white:#f6f8fc}
+body{background-color:#060911}
+body::before{background-image:radial-gradient(ellipse at 15% 8%,rgba(255,66,99,.16),transparent 34%),radial-gradient(ellipse at 86% 26%,rgba(73,157,255,.13),transparent 32%),radial-gradient(ellipse at 53% 90%,rgba(160,84,193,.10),transparent 35%),linear-gradient(145deg,#070a12,#0a0e18 55%,#060910)!important}
+.cnr-spotlight{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:0;transition:opacity .35s ease;background:radial-gradient(430px circle at var(--mx,50%) var(--my,35%),rgba(95,157,226,.075),transparent 72%);mix-blend-mode:screen}
+@media(hover:hover) and (pointer:fine){.cnr-spotlight{opacity:1}}
+/* Crisp edge highlights and a restrained top-edge light on interactive surfaces. */
+.hero-panel,.stat,.card,.gcard,.tier-row,.player,.admin,.step,details.faq{position:relative;isolation:isolate}
+.hero-panel,.stat,.card,.gcard,.tier-row,.player,.admin,.step,details.faq{border-color:var(--cnr-line)!important}
+.hero-panel::before,.stat::before,.card::before,.gcard::before,.player::before,.tier-row::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:-1;background:linear-gradient(120deg,rgba(255,255,255,.045),transparent 38%,transparent 75%,rgba(120,216,255,.025))}
+.hero-panel{box-shadow:0 24px 70px rgba(0,0,0,.34),inset 0 1px 0 rgba(255,255,255,.07),0 0 45px rgba(255,82,104,.055)!important}
+.stat,.card,.gcard,.tier-row,.player{will-change:transform}
+.player{overflow:hidden}
+.player::after{content:"";position:absolute;top:-80%;bottom:-80%;left:-65%;width:30%;pointer-events:none;transform:rotate(22deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.075),transparent);transition:left .7s cubic-bezier(.2,.7,.2,1)}
+.player:hover::after{left:145%}
+.tier-label{filter:saturate(.92)}
+.tier-S{box-shadow:inset 0 0 24px rgba(255,64,91,.10),0 0 18px rgba(255,64,91,.04)!important}
+.tier-A{box-shadow:inset 0 0 24px rgba(168,85,247,.08)!important}
+.tier-B{box-shadow:inset 0 0 24px rgba(53,230,161,.07)!important}
+.section-title{position:relative}
+.section-title::after{content:"";height:1px;flex:1;max-width:120px;margin:0 0 5px 4px;background:linear-gradient(90deg,rgba(130,155,189,.28),transparent)}
+/* Reveal only after JS successfully initializes; without JS all content remains visible. */
+.js-reveal-ready .reveal-on-scroll{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s cubic-bezier(.2,.7,.2,1)}
+.js-reveal-ready .reveal-on-scroll.is-visible{opacity:1;transform:translateY(0)}
+@media(max-width:760px){.cnr-spotlight{display:none}.hero-panel,.stat,.card,.gcard,.tier-row,.player{will-change:auto}.js-reveal-ready .reveal-on-scroll{transform:translateY(8px);transition-duration:.38s}}
+@media(prefers-reduced-motion:reduce){.cnr-spotlight{display:none}.js-reveal-ready .reveal-on-scroll{opacity:1;transform:none;transition:none}.player::after{display:none}}
+
+
+/* CNR v7 stability patch: preserve the original document flow and component positioning. */
+html, body { min-height:100%; }
+html { background:#070a11; }
+body {
+  position:relative;
+  isolation:isolate;
+  background:transparent;
+  overflow-x:clip;
+}
+body::before {
+  z-index:-3;
+  opacity:1;
+  background:
+    radial-gradient(ellipse at 12% 18%,rgba(255,55,91,.16),transparent 34%),
+    radial-gradient(ellipse at 86% 24%,rgba(77,167,255,.14),transparent 32%),
+    radial-gradient(ellipse at 56% 88%,rgba(157,74,154,.12),transparent 36%),
+    linear-gradient(145deg,#080c14 0%,#090d16 48%,#070a11 100%);
+  background-size:160% 160%;
+  animation:cnrAtmosphere 24s ease-in-out infinite alternate;
+}
+body::after {
+  z-index:-2;
+  opacity:.18;
+  pointer-events:none;
+}
+#cnr-live-bg {
+  position:fixed;
+  inset:0;
+  display:block;
+  width:100%;
+  height:100%;
+  z-index:-1;
+  opacity:.82;
+  pointer-events:none;
+  mix-blend-mode:screen;
+  background:transparent;
+}
+/* Keep the progress indicator fixed and let the header retain its original sticky behavior. */
+.cnr-progress { position:fixed; top:0; left:0; z-index:9999; }
+.cnr-spotlight { position:fixed; z-index:0; pointer-events:none; }
+.topbar { z-index:20; }
+.modal-backdrop { z-index:40; }
+.toast { z-index:50; }
+@media(max-width:760px) {
+  #cnr-live-bg { opacity:.58; }
+  body::after { background-size:38px 38px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  body::before { animation:none; }
+  #cnr-live-bg { opacity:.35; }
+}
+
+
+/* CNR v8 — premium interaction polish + responsive player comparison */
+:root{--cnr-glow-red:rgba(255,82,104,.22);--cnr-glow-blue:rgba(114,202,255,.16)}
+html{scroll-padding-top:100px}
+.section{scroll-margin-top:96px}
+.section-title h2{letter-spacing:-.035em}
+.section-title .kicker{letter-spacing:.17em}
+.card,.hero-panel,.stat,.step,.gcard,.tier-row,.player,.faq,.founder{transition:border-color .22s ease,background-color .22s ease,box-shadow .22s ease,transform .22s ease}
+.card,.hero-panel{box-shadow:0 18px 52px rgba(0,0,0,.18),inset 0 1px rgba(255,255,255,.025)}
+.btn{transition:transform .18s ease,border-color .2s ease,background .2s ease,box-shadow .2s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.22)}
+.btn-primary:hover{box-shadow:0 0 0 1px rgba(255,82,104,.24),0 8px 26px rgba(255,82,104,.16)}
+.player{position:relative;overflow:hidden;isolation:isolate}
+.player::before{content:"";position:absolute;inset:0;z-index:-1;opacity:0;background:linear-gradient(105deg,rgba(255,82,104,.09),transparent 48%,rgba(114,202,255,.06));transition:opacity .22s ease}
+.player:hover{transform:translateY(-2px);border-color:rgba(255,111,132,.6);box-shadow:0 8px 24px rgba(0,0,0,.2),0 0 24px rgba(255,82,104,.06)}
+.player:hover::before{opacity:1}
+.chip{transition:transform .18s ease,background .18s ease,border-color .18s ease,box-shadow .18s ease}
+.chip:hover{transform:translateY(-1px)}
+.field:focus-visible,.btn:focus-visible,.chip:focus-visible,.player:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid #72caff;outline-offset:3px}
+.compare-shell{padding:clamp(14px,2.8vw,26px);position:relative;overflow:hidden}
+.compare-shell::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 0% 0%,rgba(255,82,104,.075),transparent 38%),radial-gradient(ellipse at 100% 100%,rgba(114,202,255,.065),transparent 40%)}
+.compare-controls{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 44px minmax(0,1fr);align-items:end;gap:14px}
+.compare-select{display:grid;gap:8px;min-width:0;color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.compare-select .field{width:100%;min-width:0;letter-spacing:normal;text-transform:none}
+.versus-mark{align-self:center;display:grid;place-items:center;width:40px;height:40px;margin-top:17px;border:1px solid rgba(255,82,104,.35);border-radius:12px;background:linear-gradient(145deg,rgba(255,82,104,.15),rgba(114,202,255,.1));color:#f4f7ff;font-size:12px;font-weight:950;letter-spacing:.08em;box-shadow:0 0 22px rgba(255,82,104,.08)}
+.compare-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:16px;position:relative}
+.compare-result{position:relative;margin-top:18px}
+.compare-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.compare-person{min-width:0;padding:18px;border:1px solid var(--line);border-radius:14px;background:linear-gradient(150deg,rgba(24,34,49,.92),rgba(12,18,28,.94));position:relative;overflow:hidden;animation:compareIn .35s ease both}
+.compare-person::after{content:"";position:absolute;width:150px;height:150px;right:-85px;top:-85px;border-radius:50%;background:var(--cnr-glow-red);filter:blur(18px);pointer-events:none}
+.compare-person:nth-child(2)::after{background:var(--cnr-glow-blue)}
+.compare-person h3{font-size:clamp(17px,2.6vw,22px);margin:0 0 5px;overflow-wrap:anywhere}
+.compare-tier{display:inline-flex;align-items:center;gap:7px;margin:8px 0 14px;padding:6px 9px;border-radius:8px;font-size:11px;font-weight:900;letter-spacing:.05em;border:1px solid rgba(255,255,255,.1)}
+.compare-tier.tier-S{background:rgba(255,82,104,.12);color:#ff8798}.compare-tier.tier-A{background:rgba(196,160,250,.12);color:#d6baff}.compare-tier.tier-B{background:rgba(86,214,164,.12);color:#80e7bd}.compare-tier.tier-C{background:rgba(114,202,255,.12);color:#9cdbff}.compare-tier.tier-U{background:rgba(160,174,194,.1);color:#c0cad8}
+.compare-stat-list{display:grid;gap:0}
+.compare-stat{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-top:1px solid rgba(255,255,255,.07);font-size:12px}
+.compare-stat span{color:var(--muted)}.compare-stat b{text-align:right;overflow-wrap:anywhere}
+.compare-footnote{position:relative;color:var(--muted);font-size:11px;line-height:1.65;margin:14px 0 0}
+@keyframes compareIn{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:600px){.compare-controls{grid-template-columns:minmax(0,1fr);gap:10px}.versus-mark{width:34px;height:28px;margin:0 auto;font-size:10px;border-radius:9px}.compare-grid{gap:8px}.compare-person{padding:12px}.compare-stat{font-size:11px;gap:7px}.compare-actions .btn{flex:1}.compare-person h3{font-size:16px}}
+@media(max-width:360px){.compare-grid{grid-template-columns:minmax(0,1fr)}.compare-person h3{font-size:18px}}
+@media(prefers-reduced-motion:reduce){.card,.hero-panel,.stat,.step,.gcard,.tier-row,.player,.faq,.founder,.btn,.chip{transition:none!important}.player:hover,.btn:hover,.chip:hover{transform:none!important}.compare-person{animation:none!important}}
+
+
+
+/* =========================================================
+   CNR v9 — COMPETITIVE INTELLIGENCE / stability + visual finish
+   Keep existing layout flow, IDs and application logic intact.
+   ========================================================= */
+:root{--cnr-focus:#8bdcff;--cnr-border:rgba(143,169,202,.24)}
+html{scroll-padding-top:calc(82px + env(safe-area-inset-top,0px));}
+body{isolation:isolate;overflow-x:clip;background:transparent;}
+body::before{z-index:-3!important;animation:cnrAtmosphere 28s ease-in-out infinite alternate!important;}
+body::after{z-index:-2!important;pointer-events:none!important;}
+/* The canvas is decorative and must never sit above page content or steal input. */
+#cnr-live-bg{position:fixed!important;inset:0!important;width:100vw!important;height:100vh!important;height:100dvh!important;z-index:-1!important;display:block!important;pointer-events:none!important;opacity:.62!important;mix-blend-mode:screen!important;will-change:auto!important;}
+.cnr-spotlight{position:fixed!important;inset:0!important;z-index:0!important;pointer-events:none!important;}
+.topbar{position:sticky!important;top:env(safe-area-inset-top,0px)!important;z-index:20!important;}
+body>main.wrap,body>footer{position:relative;z-index:1;}
+.cnr-progress{position:fixed!important;top:0!important;left:0!important;z-index:9999!important;pointer-events:none!important;}
+.modal-backdrop{position:fixed!important;inset:0!important;z-index:40!important;}
+.toast{position:fixed!important;z-index:50!important;}
+#updatedPill[data-retry="true"]{cursor:pointer;border-color:rgba(255,154,61,.48);color:#ffd4a6;background:rgba(255,154,61,.08);}
+#updatedPill[data-retry="true"]:hover{box-shadow:0 0 18px rgba(255,154,61,.12);}
+/* A premium edge highlight that remains subtle at rest. */
+.hero-panel,.stat,.card,.tier-row,.player,.gcard,.step,details.faq,.compare-person{border-color:var(--cnr-border);}
+.hero-panel,.card,.stat,.tier-row,.player,.gcard,.step,details.faq,.compare-person{box-shadow:inset 0 1px 0 rgba(255,255,255,.035),0 14px 40px rgba(0,0,0,.18);}
+.player,.btn,.chip,.navlinks a,.navlinks button,.stat,.tier-row,.card,.gcard{ -webkit-tap-highlight-color:transparent; }
+.player:focus-visible,.btn:focus-visible,.chip:focus-visible,.navlinks a:focus-visible,.navlinks button:focus-visible,#updatedPill[data-retry="true"]:focus-visible{outline:2px solid var(--cnr-focus)!important;outline-offset:3px!important;}
+/* Keep animated reveals from hiding page content on unsupported browsers. */
+@media(max-width:760px){
+ #cnr-live-bg{opacity:.42!important;}
+ .hero-panel,.stat,.card,.tier-row,.player,.gcard,.admin,.modal{backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);}
+ .topbar{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);}
+ .player:hover,.tier-row:hover,.card:hover,.gcard:hover,.stat:hover{transform:translateY(-1px);}
+}
+@media(max-width:420px){
+ .compare-grid{grid-template-columns:minmax(0,1fr)!important;}
+ .toolbar .field{max-width:100%;}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto!important;}
+ body::before{animation:none!important;}
+ #cnr-live-bg{opacity:.24!important;}
+ .brandmark::after,.hero .gradient,.hero-panel::after,.player::after{animation:none!important;display:none!important;}
+ *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;}
+}
+
+
+
+/* CNR v10 — layout, stacking and mobile stability patch.
+   Keep the ambient effects behind content and preserve the sticky navigation. */
+html{scroll-padding-top:88px}
+body{isolation:isolate}
+body>canvas#cnr-live-bg{position:fixed!important;inset:0!important;z-index:0!important;pointer-events:none!important;mix-blend-mode:normal!important;will-change:auto!important}
+body>.cnr-spotlight{position:fixed!important;inset:0!important;z-index:0!important;pointer-events:none!important}
+body>.topbar{position:sticky!important;top:env(safe-area-inset-top,0px)!important;z-index:20!important}
+body>main.wrap{position:relative!important;z-index:2!important}
+body>footer.footer{position:relative!important;z-index:2!important}
+body>noscript{position:relative!important;z-index:2!important}
+body>.cnr-progress{position:fixed!important;z-index:9999!important;top:0!important;left:0!important}
+body>.modal-backdrop{position:fixed!important;inset:0!important;z-index:1000!important}
+body>.toast{position:fixed!important;z-index:1100!important}
+body>button#toTop{position:fixed!important;z-index:100!important}
+/* Do not let decorative surfaces intercept taps or blur the ranking text. */
+#cnr-live-bg,.cnr-spotlight{pointer-events:none!important}
+@media(max-width:760px){
+  body>canvas#cnr-live-bg{opacity:.42!important}
+  .hero-panel,.stat,.card,.gcard,.tier-row,.player,.admin{backdrop-filter:blur(8px)!important;-webkit-backdrop-filter:blur(8px)!important}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto!important}
+  body::before,.hero-panel::after{animation:none!important}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .js-reveal-ready .reveal-on-scroll{opacity:1!important;transform:none!important;transition:none!important}
+  #cnr-live-bg{opacity:.24!important}
+}
+
+
+/* V11 editorial hierarchy and content rhythm */
+.quickstart{display:grid;grid-template-columns:1.35fr repeat(3,minmax(0,1fr));gap:10px;margin:0 auto 28px;padding:16px;border:1px solid #283548;border-radius:14px;background:linear-gradient(115deg,#111a28,#0d131e 68%);box-shadow:0 18px 44px #0002;position:relative;overflow:hidden}
+.quickstart:before{content:"";position:absolute;left:0;top:16px;bottom:16px;width:2px;background:linear-gradient(180deg,#ff5268,#ffb178);opacity:.9}
+.quickstart-intro{padding:8px 16px 8px 10px;align-self:center}
+.quickstart-intro h2{font-size:clamp(17px,2vw,22px);line-height:1.2;letter-spacing:-.035em;margin:8px 0;color:#f4f6fb}
+.quickstart-intro p{font-size:11px;line-height:1.7;color:#a7b2c3;margin:0;max-width:370px}
+.quick-card{display:flex;flex-direction:column;justify-content:center;gap:10px;min-height:112px;padding:15px;border:1px solid #2a3749;border-radius:10px;background:linear-gradient(145deg,#141e2c,#101722);transition:transform .18s ease,border-color .18s ease,background .18s ease;min-width:0}
+.quick-card:hover{transform:translateY(-2px);border-color:#586b85;background:linear-gradient(145deg,#192638,#111a27)}
+.quick-num{font-size:9px;font-weight:900;letter-spacing:.14em;color:#ff9baa}
+.quick-card b{font-size:13px;letter-spacing:-.02em;color:#f2f5fa;display:flex;justify-content:space-between;gap:8px;align-items:center}
+.quick-card b span{color:#ff8a9a;font-size:17px}
+.quick-card small{font-size:10px;line-height:1.5;color:#a7b2c3}
+.quick-card-accent{border-color:#68404a;background:linear-gradient(145deg,#281923,#17151e)}
+.hero-separator{color:#58667a;padding:0 3px}
+.hero-panel{border-color:#303e52;box-shadow:0 18px 50px #0003, inset 0 1px #ffffff08}
+.hero-score{font-variant-numeric:tabular-nums}
+.stats .stat{position:relative;overflow:hidden;background:linear-gradient(145deg,#121a27,#0e141e);border-color:#273446}
+.stats .stat:after{content:"";position:absolute;left:16px;right:16px;top:0;height:1px;background:linear-gradient(90deg,transparent,#ffffff20,transparent)}
+.section{scroll-margin-top:92px}
+.section-title{padding-bottom:3px}
+.section h2{font-size:clamp(22px,3vw,28px);line-height:1.15}
+.kicker{letter-spacing:.17em}
+.tier-row{background:linear-gradient(110deg,#111a28,#0e141f);border-color:#2a3749}
+.tier-label small{text-align:center;line-height:1.25}
+.gcard{border:1px solid #2a3749;min-height:126px}
+.step{transition:transform .18s ease,border-color .18s ease}
+.step:hover{transform:translateY(-2px);border-color:#465a74}
+.card{border-color:#293648;box-shadow:0 14px 38px #00018}
+.footer{margin-top:16px}
+@media(max-width:900px){.quickstart{grid-template-columns:repeat(3,minmax(0,1fr))}.quickstart-intro{grid-column:1/-1;padding:5px 8px 10px}.quickstart-intro p{max-width:620px}.quick-card{min-height:100px}}
+@media(max-width:560px){.quickstart{grid-template-columns:1fr;padding:12px;gap:8px;margin-bottom:22px}.quickstart-intro{grid-column:auto;padding:6px 8px 10px}.quickstart-intro h2{font-size:20px}.quick-card{min-height:0;padding:13px;gap:6px}.quick-card b{font-size:13px}.hero{gap:20px}.hero-separator{padding:0 1px}.section{padding-bottom:24px}}
+@media(hover:none){.quick-card:hover,.step:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){.quick-card,.step,.stat{transition:none!important}.quick-card:hover,.step:hover,.stat:hover{transform:none!important}}
+
+
+/* v12 — editorial hierarchy, restrained visual language, clearer leadership contact */
+:root{--cnr-ink:#080c12;--cnr-panel:#101720;--cnr-line:#2b3543;--cnr-muted:#aab5c4}
+body{background-color:#080c12;color:#e9edf3;letter-spacing:.002em}
+body:before{opacity:.2!important}
+.wrap{width:min(1220px,calc(100% - 44px))}
+.topbar{background:rgba(8,12,18,.96);border-bottom-color:#27313e;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.brandmark{border-radius:5px;background:#d13a50;box-shadow:none}
+.brandname{letter-spacing:.13em;font-size:13px}
+.brandsub{font-size:9px;letter-spacing:.12em;color:#8f9bab}
+.navlinks a,.navlinks button{border-radius:5px}
+.hero{padding:70px 0 40px;gap:42px}
+.eyebrow{border-radius:3px;background:#121923;border:1px solid #344050;color:#c1cad5;box-shadow:none;font-size:9px;letter-spacing:.16em;padding:8px 11px}
+.hero h1{font-size:clamp(42px,6.3vw,76px);line-height:.99;letter-spacing:-.065em;font-weight:850;margin:23px 0 20px}
+.gradient{background:linear-gradient(100deg,#f1f4f8 0%,#aab7c8 100%);-webkit-background-clip:text;background-clip:text}
+.hero p{font-size:14px;line-height:1.9;color:#aeb8c6;max-width:620px}
+.btn{border-radius:5px;font-size:11px;font-weight:750;letter-spacing:.025em}
+.btn-primary{background:#c33349;border-color:#d64a5e;box-shadow:none}
+.btn-primary:hover{background:#d34357;border-color:#e05b6d;box-shadow:none}
+.hero-panel,.stat,.card,.tier-row,.admin-item,.modal{background:#0f151e;border-color:#293443;box-shadow:none}
+.hero-panel{border-radius:8px;padding:24px}
+.hero-panel:before{background:linear-gradient(90deg,transparent,#59697c,transparent)}
+.stat{border-radius:7px}
+.section-title{margin-bottom:22px}
+.kicker{color:#c2ccd8;letter-spacing:.17em}
+.section h2{font-weight:780;letter-spacing:-.035em}
+.card{border-radius:8px}
+.tier-row{border-radius:7px}
+.player{border-radius:5px}
+.pill,.chip{border-radius:4px}
+.role-tag{display:inline-block;vertical-align:middle;margin-left:7px;padding:4px 6px;border:1px solid #435064;border-radius:3px;color:#bfc9d6;font-size:8px;font-weight:800;letter-spacing:.12em}
+#contactCard{border-left:2px solid #c63b50}
+.founder{border-bottom-color:#26313e}
+.founder b{color:#f0f3f7}
+.footer{border-top-color:#283341}
+@media(max-width:760px){.wrap{width:calc(100% - 28px)}.hero{padding:43px 0 24px;gap:22px}.hero h1{font-size:clamp(39px,10vw,58px)}.brandsub{letter-spacing:.07em;font-size:8px}.role-tag{margin-top:6px}}
+@media(prefers-reduced-motion:reduce){.btn,.navlinks a,.navlinks button{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="cnr-progress" aria-hidden="true"><span id="cnrProgressBar"></span></div>
+<canvas id="cnr-live-bg" aria-hidden="true"></canvas>
+<div class="cnr-spotlight" aria-hidden="true"></div>
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="CNR Clan home">
+      <div class="brandmark">CNR</div><div><div class="brandname">CNR CLAN</div><div class="brandsub">PVP RANKING AUTHORITY · BLOCKMAN GO</div></div>
+    </a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#rankings">Tier list</a><a href="#compare">Compare players</a><a href="#tiers">Tier standards</a><a href="#apply">Get tested</a><a href="#faq">Help</a><a href="#clan">Clan</a>
+      <a class="yt" id="ytLink" href="#" target="_blank" rel="noopener noreferrer">▶ YouTube</a>
+      <button id="adminOpen" type="button">Admin</button>
+    </nav>
+  </div>
+</header>
+
+<noscript><div class="wrap" style="padding:20px 0;color:#ffc3c9">This site needs JavaScript turned on to show the rankings.</div></noscript>
+<main class="wrap" id="home">
+  <section class="hero">
+    <div>
+      <span class="eyebrow"><span class="dot"></span> BLOCKMAN GO · COMPETITIVE RANKING INDEX</span>
+      <h1>COMPETITION,<br><span class="gradient">MEASURED.</span></h1>
+      <p>The CNR Clan ranking index documents Blockman Go PvP performance through structured tier tests and reviewed placements. Explore the roster, compare verified player records, and see how to qualify for an official ranking.</p>
+      <div class="actions"><a class="btn btn-primary" href="#rankings">View official rankings <span aria-hidden="true">↘</span></a><a class="btn btn-quiet" href="#apply">Request a tier test</a><a class="btn" id="ytLink2" href="#" target="_blank" rel="noopener noreferrer">Watch match examples ↗</a></div>
+    </div>
+    <aside class="hero-panel">
+      <div class="panel-head"><span>ROSTER SNAPSHOT <span class="hero-separator">/</span> BG PVP</span><span class="live"><span class="dot"></span> Live roster</span></div>
+      <div class="hero-score" id="heroCount">06 <span style="font-size:14px;color:#929bad;font-weight:700">players</span></div>
+      <div class="hero-small" id="heroNote">Published placements are reviewed by authorized CNR testers. The roster changes when verified updates are released.</div>
+      <div class="mini-bars">
+        <div class="mini-row"><span style="color:#ff6e6e">HT</span><div class="bar"><span id="barS" style="width:0;background:#f04444"></span></div><b id="countS">0</b></div>
+        <div class="mini-row"><span style="color:#c8a4ff">AT</span><div class="bar"><span id="barA" style="width:0;background:#b78cff"></span></div><b id="countA">0</b></div>
+        <div class="mini-row"><span style="color:#65e6b0">MT</span><div class="bar"><span id="barB" style="width:0;background:#39d98a"></span></div><b id="countB">0</b></div>
+        <div class="mini-row"><span style="color:#7fc7ff">LT</span><div class="bar"><span id="barC" style="width:0;background:#68b7ff"></span></div><b id="countC">0</b></div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="stats" aria-label="Roster summary">
+    <div class="stat"><strong id="statPlayers">0</strong><div>Ranked players</div></div>
+    <div class="stat"><strong id="statDivisions">0</strong><div>Active divisions</div></div>
+    <div class="stat"><strong>4</strong><div>Performance tiers</div></div>
+    <div class="stat"><strong>24/7</strong><div>Roster access</div></div>
+  </section>
+
+
+  <section class="section" id="rankings">
+    <div class="section-title"><div><div class="kicker">THE PUBLIC ROSTER</div><h2>Find your place on the list</h2><div class="subtext">Browse the latest published placements. Search by IGN, account ID or device, then open a player card for recorded details.</div></div><span class="pill" id="updatedPill">Public view</span></div>
+    <div class="chips" id="tierChips" role="group" aria-label="Filter by tier"></div>
+    <div class="toolbar">
+      <input class="field search" id="searchBar" type="search" placeholder="Search IGN, game ID or device…" aria-label="Search players">
+      <select class="field" id="divisionFilter" aria-label="Filter by division"><option value="all">All divisions</option><option value="1">Division 1</option><option value="2">Division 2</option><option value="3">Division 3</option></select>
+      <input type="hidden" id="tierFilter" value="all">
+      <select class="field" id="sortFilter" aria-label="Sort players"><option value="tier">Sort: Tier</option><option value="name">Sort: Name</option><option value="division">Sort: Division</option></select>
+    </div>
+    <div id="tierGroups" class="tier-groups"></div>
+  </section>
+
+  <section class="section compare-section" id="compare">
+    <div class="section-title"><div><div class="kicker">SIDE-BY-SIDE PROFILE REVIEW</div><h2>Put two profiles side by side</h2><div class="subtext">Compare official tiers, divisions and recorded test details in one view. This tool summarizes roster data—it does not predict who would win a fight.</div></div><span class="pill">PROFILE COMPARISON</span></div>
+    <div class="compare-shell card">
+      <div class="compare-controls">
+        <label class="compare-select"><span>Player one</span><select class="field" id="comparePlayerA" aria-label="Choose first player"><option value="">Loading roster…</option></select></label>
+        <div class="versus-mark" aria-hidden="true">VS</div>
+        <label class="compare-select"><span>Player two</span><select class="field" id="comparePlayerB" aria-label="Choose second player"><option value="">Loading roster…</option></select></label>
+      </div>
+      <div class="compare-actions"><button class="btn btn-primary" id="runCompare" type="button">Compare players <span aria-hidden="true">↗</span></button><button class="btn" id="swapCompare" type="button">Swap players</button></div>
+      <div id="compareResult" class="compare-result" aria-live="polite"><div class="empty">Pick two published players above to compare their official tier, division and recorded test details.</div></div>
+      <p class="compare-footnote">Only recorded roster data is shown. Missing stats stay marked as unavailable; no win rate or skill score is invented.</p>
+    </div>
+  </section>
+
+  <section class="section" id="updates">
+    <div class="section-title"><div><div class="kicker">ROSTER CHANGELOG</div><h2>New placements & tier changes</h2><div class="subtext">A transparent record of published placements and tier movements. Newest entries appear first.</div></div></div>
+    <div class="card"><div id="updatesList"></div></div>
+  </section>
+
+  <section class="section" id="tiers">
+    <div class="section-title"><div><div class="kicker">THE STANDARD</div><h2>What each tier means</h2><div class="subtext">Use these standards as a guide; authorized testers make the final placement after a review and tier test.</div></div></div>
+    <div class="guide" id="tierGuide"></div>
+  </section>
+
+  <section class="section" id="process">
+    <div class="section-title"><div><div class="kicker">FROM APPLICATION TO PLACEMENT</div><h2>Four steps. One fair process.</h2><div class="subtext">Every player follows the same review path. A submitted application does not guarantee a tier.</div></div></div>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><b>Send your details</b><span>Share your IGN, account ID, device, experience and preferred division.</span></div>
+      <div class="step"><div class="num">2</div><b>Application review</b><span>The team checks your information and follows up if you are ready to schedule.</span></div>
+      <div class="step"><div class="num">3</div><b>Play your test</b><span>Complete the arranged PvP test under the team’s rules and conditions.</span></div>
+      <div class="step"><div class="num">4</div><b>Placement published</b><span>If placed, your tier and available test details are added to the public roster.</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="apply">
+    <div class="section-title"><div><div class="kicker">READY TO BE TESTED?</div><h2>Start your tier-test application</h2><div class="subtext">Send accurate details so the CNR tester team can review your request and arrange the next step.</div></div></div>
+    <div class="card" id="contactCard" style="margin-bottom:14px">
+      <div class="kicker">TESTING LEADERSHIP · DIRECT CONTACT</div><h3 style="margin-top:8px">Tier Tester Head <span class="role-tag">OFFICIAL CONTACT</span></h3>
+      <p class="subtext">For tier-test requests, contact the CNR testing lead in Blockman Go using the account details below. Include your IGN, account ID, division preference, device, and PvP experience.</p>
+      <div class="founders">
+        <div class="founder"><span>In-game name · IGN</span><b id="ctIgn"></b></div>
+        <div class="founder"><span>Blockman Go account ID</span><b><span id="ctId"></span><button class="btn" id="ctCopy" type="button" style="padding:5px 9px;margin-left:10px">Copy ID</button></b></div>
+      </div>
+      <h4 style="margin:16px 0 4px;font-size:13px">Send these details in your message</h4>
+      <ul class="rules">
+        <li>Your in-game name (IGN)</li>
+        <li>Your in-game ID</li>
+        <li>Preferred division (1, 2 or 3)</li>
+        <li>Your device (Android, iOS or PC)</li>
+        <li>Your PvP experience (how long you have played)</li>
+        <li>Your achievements and playstyle</li>
+      </ul>
+      <h4 style="margin:16px 0 4px;font-size:13px">How to apply</h4>
+      <ol class="rules">
+        <li>Open Blockman Go and search for the account ID above to find the account.</li>
+        <li>Send a friend request with a message that includes all the details listed.</li>
+        <li>Wait for a tester to reply and schedule your tier test. Your tier is decided only after the test.</li>
+      </ol>
+      <div class="notice ok" style="margin-bottom:0"><b>Beware of imitators:</b> only this account ID handles applications. Nobody from CNR will ask for your password or payment.</div>
+    </div>
+    <div class="split" id="applySplit">
+      <div class="card" id="appCard">
+        <h3>Send an application online</h3><p class="subtext" id="appIntro" style="margin-bottom:18px">Complete every field honestly. A clear application helps testers understand your experience before arranging a test.</p>
+        <div id="applyLinkBox" class="hidden"><p class="subtext" style="margin-bottom:14px">Applications open in a separate form. Fill it in and the CNR testers will review it. Your tier is decided by the tester team, never automatically.</p><a class="btn btn-primary" id="applyLink" target="_blank" rel="noopener noreferrer" href="#">Open application form ↗</a></div>
+        <form id="appForm">
+          <div class="formgrid">
+            <div class="formfield"><label for="ign">In-game name (IGN) *</label><input class="field" id="ign" name="ign" maxlength="32" required placeholder="Your player name"></div>
+            <div class="formfield"><label for="gameId">In-game ID *</label><input class="field" id="gameId" name="gameId" maxlength="40" required placeholder="Your game ID"></div>
+            <div class="formfield"><label for="division">Preferred division *</label><select class="field" id="division" name="division" required><option value="1">Division 1</option><option value="2">Division 2</option><option value="3">Division 3</option></select></div>
+            <div class="formfield"><label for="device">Device *</label><select class="field" id="device" name="device" required><option>Android</option><option>iOS</option><option>PC</option></select></div>
+            <div class="formfield full"><label for="experience">PvP experience *</label><select class="field" id="experience" name="experience" required><option>Less than 6 months</option><option>6–12 months</option><option>1–2 years</option><option>2+ years</option></select></div>
+            <div class="formfield full"><label for="achievements">PvP achievements &amp; playstyle *</label><textarea class="field" id="achievements" name="achievements" maxlength="400" minlength="10" required placeholder="Previous tier lists, tournaments, clans, or what you are best at"></textarea></div>
+            <div class="formfield full"><label class="check" style="text-transform:none;letter-spacing:0;font-weight:500"><input type="checkbox" id="agree" required><span>I confirm my details are accurate, the account is my own, and I will follow the testing rules (no hacks, exploits or alt-account boosting).</span></label></div>
+            <div class="sr" aria-hidden="true"><label>Leave empty<input id="hp" name="website" tabindex="-1" autocomplete="off"></label></div>
+            <div class="formfield full"><button class="btn btn-primary" id="appSubmit" type="submit">Submit application ↗</button></div>
+          </div>
+        </form>
+        <div class="notice ok"><b>Your safety:</b> CNR staff will never ask for your password, login code, payment, or in-game items. Only fill in the details requested above.</div>
+        <div class="notice" id="appNotice"></div>
+      </div>
+      <aside class="card" id="clan">
+        <div class="kicker">The people behind CNR</div><h3 style="margin-top:8px">Clan operations</h3><p class="subtext">Division leadership and tester credits.</p>
+        <div class="founders" id="founders"></div>
+        <div class="notice">Rankings are based on agreed testing criteria and reviewed by authorized staff before publication.</div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" id="rules">
+    <div class="section-title"><div><div class="kicker">COMPETITIVE INTEGRITY</div><h2>Keep the competition fair</h2><div class="subtext">These standards protect players, testers and the credibility of the roster.</div></div></div>
+    <div class="card"><ul class="rules" id="rulesList"></ul></div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="section-title"><div><div class="kicker">NEED A QUICK ANSWER?</div><h2>Frequently asked questions</h2></div></div>
+    <div id="faqList"></div>
+  </section>
+
+  <section id="adminPanel" class="admin hidden">
+    <div class="admin-head"><div><div class="kicker">Staff only</div><h2>Admin & tester workspace</h2></div><div class="admin-actions" style="margin:0"><button class="btn" id="adminLock">Lock</button><button class="btn" id="adminClose">Close panel</button></div></div>
+    <div class="notice"><b>Heads up:</b> the passcode only hides these controls in the browser. It is not real security, because anyone can read a page's source. Edits here stay on <b>this browser</b> until you export the roster and upload it as <b>roster.json</b> next to this page. Never put private data in here.</div>
+    <div class="admin-grid">
+      <div class="admin-item"><h4>Review applications</h4><div class="hint">Applications are private: only you see this list, and applicants never see their status here. Every new application starts as Pending until you test them and place a tier. This list lives in this browser, so keep your form's own inbox as the master copy.</div>
+        <div class="hint" id="appCounts" style="margin-top:8px;font-weight:700"></div>
+        <form id="manualAppForm" style="margin:10px 0">
+          <div class="twocol"><input class="field" id="maIgn" maxlength="32" required placeholder="Applicant IGN"><input class="field" id="maId" maxlength="40" required placeholder="Game ID"></div>
+          <div class="twocol"><select class="field" id="maDiv" aria-label="Division"><option value="1">Division 1</option><option value="2">Division 2</option><option value="3">Division 3</option></select><select class="field" id="maDev" aria-label="Device"><option>Android</option><option>iOS</option><option>PC</option></select></div>
+          <input class="field" id="maNote" maxlength="200" placeholder="Notes (where they applied, experience, anything useful)">
+          <div class="admin-actions"><button class="btn btn-primary" type="submit">Add as Pending</button></div>
+        </form><div id="applicationsList" style="margin-top:10px"></div></div>
+      <div class="admin-item"><h4>Add / update a published player</h4>
+        <form id="playerForm">
+          <input class="field" id="adminIgn" required maxlength="32" placeholder="Player IGN">
+          <input class="field" id="adminId" required maxlength="40" placeholder="Game ID">
+          <select class="field" id="adminDivision"><option value="1">Division 1</option><option value="2">Division 2</option><option value="3">Division 3</option></select>
+          <select class="field" id="adminTier"><option value="S">High Tier (HT)</option><option value="A">Average Tier (AT)</option><option value="B">Mid Tier (MT)</option><option value="C">Low Tier (LT)</option><option value="U">Unranked</option></select>
+          <input class="field" id="adminDevice" placeholder="Device (e.g. Android)" value="Android">
+          <input class="field" id="adminTester" maxlength="32" placeholder="Tested by (tester name)">
+          <div class="twocol"><input class="field" id="adminWins" type="number" min="0" max="999" placeholder="Test wins"><input class="field" id="adminTotal" type="number" min="0" max="999" placeholder="Test matches played"></div>
+          <input class="field" id="adminDate" type="date" aria-label="Test date">
+          <select class="field" id="adminPrev" aria-label="Previous tier"><option value="">Previous tier: none (new placement)</option><option value="S">Previous: High Tier</option><option value="A">Previous: Average Tier</option><option value="B">Previous: Mid Tier</option><option value="C">Previous: Low Tier</option></select>
+          <div class="hint" style="margin-top:6px">Badges</div>
+          <div class="badgepick" id="adminBadges"><label><input type="checkbox" value="Verified"> Verified</label><label><input type="checkbox" value="Tournament Winner"> Tournament Winner</label><label><input type="checkbox" value="Division Founder"> Division Founder</label><label><input type="checkbox" value="Undefeated Test"> Undefeated Test</label></div>
+          <div class="admin-actions"><button class="btn btn-primary" type="submit">Save player</button></div>
+        </form>
+      </div>
+    </div>
+    <div class="admin-item" style="margin-top:12px"><h4>Publish roster</h4>
+      <div class="hint" id="rosterSource"></div>
+      <div class="admin-actions">
+        <button class="btn btn-primary" id="exportRoster" type="button">Export roster.json</button>
+        <button class="btn" id="importRosterBtn" type="button">Import roster.json</button>
+        <button class="btn btn-danger" id="resetLocal" type="button">Discard my local edits</button>
+        <input type="file" id="importRoster" accept="application/json,.json" class="hidden">
+      </div>
+      <textarea class="field hidden" id="exportBox" readonly rows="8" aria-label="Roster JSON" style="margin-top:10px;font-family:monospace;font-size:11px"></textarea><button class="btn hidden" id="copyRoster" type="button" style="margin-top:8px">Copy roster JSON</button>
+      <div class="status">Upload the exported file to your site as <b>roster.json</b> (same folder as this page) and every visitor sees the new rankings.</div>
+    </div>
+    <div class="admin-item" style="margin-top:12px"><h4>Current player records</h4><div id="adminPlayers"></div></div>
+  </section>
+</main>
+<footer class="footer"><div class="wrap footer-links"><a href="#rankings">Tier list</a><a href="#compare">Compare players</a><a href="#updates">Updates</a><a href="#tiers">Tier guide</a><a href="#process">How it works</a><a href="#rules">Rules</a><a href="#apply">Get tested</a><a href="#faq">Help</a></div><div class="wrap footer-inner"><span>© <span id="year"></span> CNR CLAN • OFFICIAL TIER LIST</span><span>Testing lead · Pubg (IGN)</span><span>Community-maintained rankings. Not affiliated with or endorsed by the Blockman Go publisher.</span></div></footer>
+<button id="toTop" class="totop hidden" type="button" aria-label="Back to top">↑</button>
+<div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+<div id="playerModal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal"><h3 id="modalTitle">Player profile</h3><div id="modalContent"></div><div class="close-row"><button class="btn" id="modalCopy" type="button">Share / copy profile</button><button class="btn" id="modalClose">Close</button></div></div></div>
+
+<div id="authModal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="authTitle"><div class="modal"><h3 id="authTitle">Staff access</h3><p>Enter the staff passcode to open the admin workspace.</p>
+<form id="authForm"><input class="field" id="authPass" type="password" autocomplete="current-password" placeholder="Passcode" required><div class="close-row"><button class="btn" type="button" id="authCancel">Cancel</button><button class="btn btn-primary" type="submit">Unlock</button></div></form></div></div>
+
+<script>
+/* ============ EDIT THIS SECTION ============ */
+const CONFIG = {
+  youtube: "https://www.youtube.com/@RetiredPlayerBG",
+  applyUrl: "",              // paste your Google Form link here: players open it to apply and the answers go to you
+  contact: { role: "Tier Tester Head", ign: "Pubg", id: "4206558960" },   // shown in the "Apply in the game" card
+  lastUpdated: "October 15, 2026",   // shown next to the roster; update it whenever you publish changes
+  applyEndpoint: "",        // e.g. a Formspree URL "https://formspree.io/f/xxxxxxx" (empty = saves on this browser only)
+  // SHA-256 of the staff passcode (hash only, the passcode itself is not stored here)
+  adminHash: "259f9177f87d31906b2f24aa0ba6387df45f1c2147c16277b065db62e8b4b04e",
+  founders: [
+    ["Division 1 Founder", "Aizen"],
+    ["Division 2 Founder", "Manh"],
+    ["Division 3 Founder", "Manh"],
+    ["Tier Tester Head", "Pubg"]
+  ],
+  tierCriteria: {
+    S: "Elite-level consistency. Demonstrates strong mechanics, decision-making and control against high-level opponents.",
+    A: "Advanced and reliable. Handles difficult matchups well and shows strong fundamentals across repeated fights.",
+    B: "Capable competitor. Shows solid fundamentals, understands common matchups and can compete consistently.",
+    C: "Developing competitor. Building consistency, refining mechanics and learning to make better decisions under pressure."
+  },
+  rules: [
+    "One account per player. Alt accounts and account sharing are not allowed.",
+    "No hacks, mods, exploits or macros during tests.",
+    "Play on your own account. Boosting or having someone test for you leads to removal.",
+    "Respect testers and other players. Harassment or toxicity can lead to removal.",
+    "Placements are based on the test and the team’s published standards. Ask staff about a retest if you believe your level has improved."
+  ],
+  faq: [
+    ["How do I apply?","Use the application form on this page, or add the Tier Tester Head in Blockman Go (see the Apply in the game card) and send your details."],
+    ["What do I need to apply?","Your in-game name and ID, your device, your PvP experience, and a short description of your achievements and playstyle."],
+    ["How long does review take?","Testers review applications in the order received. Approved players are placed on the roster once tested."],
+    ["Who decides my tier?","Authorized CNR testers place players using the standards in the tier guide. Players inside a tier are listed alphabetically."],
+    ["Can I be removed or demoted?","Yes. Cheating, exploits, alt-account boosting or false information can lead to rejection or removal from the roster."],
+    ["What do you do with my details?","Your in-game name, game ID, device and experience are used to review your tier test application. We never ask for passwords, payments or in-game items."],
+    ["Can I retest to move up?","Ask a tester. Retest rules are set by the tester team."]
+  ]
+};
+/* ============================================ */
+
+const STORAGE_KEY = "cnr_tierlist_demo_v1";
+const APP_KEY = "cnr_applications_demo_v1";
+const SESSION_KEY = "cnr_admin_unlocked";
+const initialPlayers = [];   // empty on purpose: the roster comes from roster.json
+const tierOrder={S:0,A:1,B:2,C:3,U:4};
+const tierNames={S:"High Tier",A:"Average Tier",B:"Mid Tier",C:"Low Tier",U:"Unranked"};
+const tierShort={S:"HT",A:"AT",B:"MT",C:"LT",U:"Unranked"};
+const BADGES=["Verified","Tournament Winner","Division Founder","Undefeated Test"];
+const mapP=p=>({ign:p.ign,gameId:p.gameId,division:String(p.division),device:p.device||"Not specified",tier:p.tier,published:p.published!==false,tester:String(p.tester||"").slice(0,32),wins:Math.max(0,parseInt(p.wins,10)||0),total:Math.max(0,parseInt(p.total,10)||0),testedOn:/^\d{4}-\d{2}-\d{2}$/.test(p.testedOn||"")?p.testedOn:"",prevTier:["S","A","B","C"].includes(p.prevTier)?p.prevTier:"",badges:Array.isArray(p.badges)?p.badges.filter(b=>BADGES.includes(b)):[]});
+function fmtDate(d){const t=new Date(d+"T00:00:00");return isNaN(t)?d:t.toLocaleDateString(undefined,{year:"numeric",month:"short",day:"numeric"})}
+function extrasHTML(p){let h="";if(p.total)h+=`<p>Tier test result: <b>Won ${p.wins} of ${p.total}</b></p>`;if(p.tester)h+=`<p>Tested by: <b>${escapeHTML(p.tester)}</b></p>`;if(p.testedOn)h+=`<p>Placed on: <b>${escapeHTML(fmtDate(p.testedOn))}</b></p>`;if(p.prevTier&&p.prevTier!==p.tier)h+=`<p>Moved from: <b>${escapeHTML(tierNames[p.prevTier])}</b></p>`;if(p.badges&&p.badges.length)h+=`<div class="badges">${p.badges.map(b=>`<span class="bdg${b==="Verified"?" v":b==="Tournament Winner"?" t":""}">${escapeHTML(b)}</span>`).join("")}</div>`;return h}
+function renderUpdates(){const el=$("updatesList");const list=players.filter(p=>p.published!==false&&p.testedOn).slice().sort((a,b)=>b.testedOn.localeCompare(a.testedOn)||a.ign.localeCompare(b.ign)).slice(0,6);el.innerHTML=list.length?list.map(p=>{const moved=p.prevTier&&p.prevTier!==p.tier;return `<div class="upd"><span class="udot"></span><span class="txt"><b>${escapeHTML(p.ign)}</b> ${moved?"moved from "+escapeHTML(tierNames[p.prevTier])+" to "+escapeHTML(tierNames[p.tier]):"was placed in "+escapeHTML(tierNames[p.tier])}<small>${escapeHTML(fmtDate(p.testedOn))}${p.tester?" · tested by "+escapeHTML(p.tester):""}</small></span><span class="p-tier">${escapeHTML(tierShort[p.tier])}</span></div>`}).join(""):'<div class="empty">The changelog will fill in as dated placements and tier changes are published. Check back after the next roster update.</div>'}
+function readExtra(){return{tester:$("adminTester").value.trim(),wins:Math.max(0,parseInt($("adminWins").value,10)||0),total:Math.max(0,parseInt($("adminTotal").value,10)||0),testedOn:$("adminDate").value||"",prevTier:$("adminPrev").value,badges:Array.from(document.querySelectorAll("#adminBadges input:checked")).map(i=>i.value)}}
+const tierDescriptions={S:"Elite",A:"Advanced",B:"Skilled",C:"Developing",U:"Not yet ranked"};
+const clone=o=>JSON.parse(JSON.stringify(o));
+const $=id=>document.getElementById(id);
+let hasLocal=false,rosterFrom="built-in sample roster";
+let players=(function(){
+ try{
+  const raw=localStorage.getItem(STORAGE_KEY);if(!raw)return clone(initialPlayers);
+  const parsed=JSON.parse(raw);
+  if(!Array.isArray(parsed)||!parsed.every(validPlayer))return clone(initialPlayers);
+  const ids=parsed.map(p=>String(p.gameId).trim().toLowerCase());
+  if(new Set(ids).size!==ids.length)return clone(initialPlayers);
+  hasLocal=true;return parsed.map(mapP);
+ }catch(e){return clone(initialPlayers)}
+})();
+let applications=(function(){
+ try{
+  const raw=localStorage.getItem(APP_KEY);if(!raw)return[];
+  const parsed=JSON.parse(raw);if(!Array.isArray(parsed))return[];
+  return parsed.filter(a=>a&&typeof a==="object"&&typeof a.id==="string"&&typeof a.ign==="string"&&typeof a.gameId==="string"&&["Pending","Testing","Ranked","Rejected"].includes(a.status));
+ }catch(e){return[]}
+})();
+if(hasLocal)rosterFrom="your local edits on this browser";
+
+function save(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify(players));localStorage.setItem(APP_KEY,JSON.stringify(applications));hasLocal=true;rosterFrom="your local edits on this browser"}catch(e){notify("Could not save in this browser. Storage may be disabled.",true)}}
+function escapeHTML(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function safeUrl(u){try{const x=new URL(u);return(x.protocol==="https:"||x.protocol==="http:")?x.href:""}catch(e){return""}}
+function initials(name){return String(name||"?").trim().split(/\s+/).slice(0,2).map(x=>x[0]||"").join("").toUpperCase()}
+function notify(msg,error=false){const el=$("toast");el.textContent=msg;el.classList.remove("hidden","error");if(error)el.classList.add("error");clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>el.classList.add("hidden"),3800)}
+function twoStep(btn,label){if(btn.dataset.armed==="1"){btn.dataset.armed="";return true}const old=btn.textContent;btn.dataset.armed="1";btn.textContent=label;setTimeout(()=>{btn.dataset.armed="";btn.textContent=old},4000);return false}
+function validPlayer(p){
+ return !!(p&&typeof p==="object"&&typeof p.ign==="string"&&p.ign.trim().length>0&&p.ign.length<=64&&typeof p.gameId==="string"&&p.gameId.trim().length>0&&p.gameId.length<=80&&Object.prototype.hasOwnProperty.call(tierOrder,p.tier)&&["1","2","3"].includes(String(p.division)));
+}
+
+/* ---- config wiring ---- */
+(function(){
+  const yt=safeUrl(CONFIG.youtube);if(yt){$("ytLink").href=yt;$("ytLink2").href=yt}else{$("ytLink").classList.add("hidden");$("ytLink2").classList.add("hidden")}
+  $("founders").innerHTML=CONFIG.founders.map(f=>`<div class="founder"><span>${escapeHTML(f[0])}</span><b>${escapeHTML(f[1])}</b></div>`).join("");
+  $("tierGuide").innerHTML=["S","A","B","C"].map(t=>`<div class="gcard tier-${t}"><b>${escapeHTML(tierNames[t])} (${tierShort[t]})</b>${escapeHTML(CONFIG.tierCriteria[t]||"")}</div>`).join("");
+  $("rulesList").innerHTML=(CONFIG.rules||[]).map(r=>`<li>${escapeHTML(r)}</li>`).join("");
+  if(CONFIG.lastUpdated)$("updatedPill").textContent="Updated "+CONFIG.lastUpdated;
+  $("faqList").innerHTML=CONFIG.faq.map(f=>`<details class="faq"><summary>${escapeHTML(f[0])}</summary><p>${escapeHTML(f[1])}</p></details>`).join("");
+  (function(){const c=CONFIG.contact||{},card=$("contactCard");if(!c.id||!c.ign){card.classList.add("hidden");return}$("ctName").textContent=c.ign;$("ctIgn").textContent=c.ign+(c.role?" ("+c.role+")":"");$("ctId").textContent=c.id;$("ctCopy").addEventListener("click",()=>{(navigator.clipboard?navigator.clipboard.writeText(c.id):Promise.reject()).then(()=>notify("Account ID copied."),()=>notify("Copy failed. Account ID: "+c.id,true))})})();
+  const au=safeUrl(CONFIG.applyUrl),canSubmit=!!(au||CONFIG.applyEndpoint);
+  if(au){$("applyLink").href=au;$("applyLinkBox").classList.remove("hidden");$("appForm").classList.add("hidden")}
+  else if(!canSubmit){$("appCard").classList.add("hidden");$("applySplit").style.gridTemplateColumns="1fr"}
+  const n=$("appNotice");
+  if(canSubmit){n.className="notice ok";n.textContent="Your application goes privately to the clan owner. After you apply, wait for a tester to contact you. Your tier is decided only after your test."}
+  else n.classList.add("hidden");
+})();
+
+/* ---- rankings ---- */
+const byRank=(a,b)=>tierOrder[a.tier]-tierOrder[b.tier]||a.ign.localeCompare(b.ign);
+function filteredPlayers(){const q=$("searchBar").value.trim().toLowerCase(),d=$("divisionFilter").value,t=$("tierFilter").value,s=$("sortFilter").value;let list=players.filter(p=>p.published!==false&&(!q||p.ign.toLowerCase().includes(q)||p.gameId.toLowerCase().includes(q)||String(p.device||"").toLowerCase().includes(q))&&(d==="all"||String(p.division)===d)&&(t==="all"||p.tier===t));list.sort((a,b)=>s==="name"?a.ign.localeCompare(b.ign):s==="division"?Number(a.division)-Number(b.division)||byRank(a,b):byRank(a,b));return list}
+function renderRankings(){const root=$("tierGroups"),list=filteredPlayers();if(!list.length){root.innerHTML=players.filter(p=>p.published!==false).length?'<div class="empty">No players match those filters. Try another name, tier or division.</div>':'<div class="empty">The public roster is waiting for its next published placements. Want to be considered? Start an application or contact the listed tester account.</div>';updateStats();return}
+ root.innerHTML=["S","A","B","C","U"].map(t=>{const members=list.filter(p=>p.tier===t);if(!members.length)return"";return `<section class="tier-row"><div class="tier-label tier-${t}">${t==="U"?"?":tierShort[t]}<small>${escapeHTML(tierNames[t])}</small></div><div class="players">${members.map(p=>`<button type="button" class="player" data-player="${escapeHTML(p.gameId)}" aria-label="View ${escapeHTML(p.ign)} profile"><span class="avatar">${escapeHTML(initials(p.ign))}</span><span class="pinfo"><span class="pname">${escapeHTML(p.ign)}${(p.badges||[]).includes("Verified")?' <span class="vt" title="Verified">✓</span>':""}</span><span class="pmeta">Div. ${escapeHTML(p.division)} · ${escapeHTML(p.device||"Device not set")}</span></span><span class="p-tier">${escapeHTML(tierShort[p.tier])}</span></button>`).join("")}</div></section>`}).join("");
+ root.querySelectorAll("[data-player]").forEach(el=>el.addEventListener("click",()=>showPlayer(el.dataset.player)));updateStats()}
+function renderChips(published){const cur=$("tierFilter").value,full={S:"High Tier",A:"Average Tier",B:"Mid Tier",C:"Low Tier",U:"Unranked"};const items=[["all","All",published.length]].concat(["S","A","B","C","U"].map(t=>[t,tierShort[t],published.filter(p=>p.tier===t).length]).filter(x=>x[0]!=="U"||x[2]>0||cur==="U"));$("tierChips").innerHTML=items.map(([k,l,n])=>`<button type="button" class="chip${cur===k?" on":""}" data-t="${k}" title="${escapeHTML(full[k]||"All tiers")}" aria-pressed="${cur===k}">${escapeHTML(l)}<i>${n}</i></button>`).join("")}
+$("tierChips").addEventListener("click",e=>{const b=e.target.closest("[data-t]");if(!b)return;$("tierFilter").value=b.dataset.t;renderRankings()});
+function updateStats(){const published=players.filter(p=>p.published!==false);renderChips(published);$("statPlayers").textContent=published.length;$("statDivisions").textContent=new Set(published.map(p=>String(p.division))).size;$("heroCount").innerHTML=String(published.length).padStart(2,"0")+' <span style="font-size:14px;color:#929bad;font-weight:700">players</span>';["S","A","B","C"].forEach(t=>{const n=published.filter(p=>p.tier===t).length;$("count"+t).textContent=n;$("bar"+t).style.width=(published.length?n/published.length*100:0)+"%"})}
+let currentPlayerId="";
+function openFromHash(){const m=location.hash.match(/^#player=(.+)$/);if(m){try{const id=decodeURIComponent(m[1]);if(players.some(p=>p.gameId===id))showPlayer(id)}catch(e){}}}
+function closePlayer(){$("playerModal").classList.add("hidden");try{if(location.hash.indexOf("#player=")===0)history.replaceState(null,"",location.pathname+location.search)}catch(e){}}
+function showPlayer(id){const p=players.find(x=>x.gameId===id);if(!p)return;$("modalTitle").textContent=p.ign;$("modalContent").innerHTML=`<p>Official tier: <b>${escapeHTML(tierNames[p.tier])}</b> — ${escapeHTML(tierDescriptions[p.tier])}</p><p>Game ID: <b>${escapeHTML(p.gameId)}</b></p><p>Division: <b>${escapeHTML(p.division)}</b></p><p>Device: <b>${escapeHTML(p.device||"Not specified")}</b></p>${extrasHTML(p)}`;$("playerModal").classList.remove("hidden");currentPlayerId=id;try{history.replaceState(null,"",location.pathname+location.search+"#player="+encodeURIComponent(id))}catch(e){}}
+
+/* ---- admin render ---- */
+function renderAdmin(){
+ const apps=$("applicationsList");
+ apps.innerHTML=applications.length?applications.map(a=>{return `<div class="rowline"><b style="font-size:12px">${escapeHTML(a.ign)}</b><div class="hint">ID: ${escapeHTML(a.gameId)} · Div. ${escapeHTML(a.division)} · ${escapeHTML(a.device)} · <b style="color:${a.status==="Pending"?"#ffd166":a.status==="Testing"?"#38bdf8":a.status==="Ranked"?"#35e6a1":"#ff718a"}">${escapeHTML(a.status)}</b></div>${a.achievements?`<div class="hint">${escapeHTML(a.experience||"")} — ${escapeHTML(a.achievements)}</div>`:""}<div class="admin-actions">${a.status==="Pending"?`<button class="btn btn-primary" data-test="${escapeHTML(a.id)}">Start tier test</button><button class="btn" data-reject="${escapeHTML(a.id)}">Reject</button>`:a.status==="Testing"?`<select class="field" data-tier-for="${escapeHTML(a.id)}" aria-label="Tier to place"><option value="S">High Tier (HT)</option><option value="A">Average Tier (AT)</option><option value="B">Mid Tier (MT)</option><option value="C">Low Tier (LT)</option></select><button class="btn btn-primary" data-place="${escapeHTML(a.id)}">Place in tier</button><button class="btn" data-reject="${escapeHTML(a.id)}">Reject</button>`:""}<button class="btn" data-delete-app="${escapeHTML(a.id)}">Delete</button></div></div>`}).join(""):'<div class="empty">No applications on this browser yet.</div>';
+ apps.querySelectorAll("[data-test]").forEach(b=>b.onclick=()=>changeApp(b.dataset.test,"Testing"));
+ apps.querySelectorAll("[data-place]").forEach(b=>b.onclick=()=>{const sel=apps.querySelector('[data-tier-for="'+b.dataset.place+'"]');placeApp(b.dataset.place,sel?sel.value:"U")});
+ const cnt=$("appCounts");if(cnt)cnt.textContent="Pending: "+applications.filter(a=>a.status==="Pending").length+" · Testing: "+applications.filter(a=>a.status==="Testing").length+" · Ranked: "+applications.filter(a=>a.status==="Ranked").length;
+ apps.querySelectorAll("[data-reject]").forEach(b=>b.onclick=()=>changeApp(b.dataset.reject,"Rejected"));
+ apps.querySelectorAll("[data-delete-app]").forEach(b=>b.onclick=()=>{applications=applications.filter(a=>a.id!==b.dataset.deleteApp);save();renderAll()});
+ const ap=$("adminPlayers");
+ ap.innerHTML=players.length?players.map(p=>`<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;border-top:1px solid #33303a;padding:9px 0"><span style="font-size:11px"><b>${escapeHTML(p.ign)}</b><span class="hint"> · ${escapeHTML(p.gameId)} · Div. ${escapeHTML(p.division)} · ${escapeHTML(tierNames[p.tier])}</span></span><span class="admin-actions" style="margin:0"><button class="btn" data-edit="${escapeHTML(p.gameId)}">Edit</button><button class="btn btn-danger" data-remove="${escapeHTML(p.gameId)}">Remove</button></span></div>`).join(""):'<div class="empty">No player records.</div>';
+ ap.querySelectorAll("[data-remove]").forEach(b=>b.onclick=()=>{if(twoStep(b,"Click again to remove")){players=players.filter(p=>p.gameId!==b.dataset.remove);save();renderAll();notify("Player removed.")}});
+ ap.querySelectorAll("[data-edit]").forEach(b=>b.onclick=()=>{const p=players.find(x=>x.gameId===b.dataset.edit);if(!p)return;$("adminIgn").value=p.ign;$("adminId").value=p.gameId;$("adminDivision").value=String(p.division);$("adminTier").value=p.tier;$("adminDevice").value=p.device||"";$("adminTester").value=p.tester||"";$("adminWins").value=p.wins||"";$("adminTotal").value=p.total||"";$("adminDate").value=p.testedOn||"";$("adminPrev").value=p.prevTier||"";document.querySelectorAll("#adminBadges input").forEach(i=>i.checked=(p.badges||[]).includes(i.value));$("adminIgn").scrollIntoView({behavior:"smooth",block:"center"})});
+ $("rosterSource").textContent="Currently showing: "+rosterFrom+". Visitors see the published roster.json (or the sample roster if there is none).";
+}
+function renderComparisonOptions(){
+ const a=$("comparePlayerA"),b=$("comparePlayerB");if(!a||!b)return;
+ const list=players.filter(p=>p.published!==false).slice().sort((x,y)=>x.ign.localeCompare(y.ign));
+ const prevA=a.value,prevB=b.value;
+ const options='<option value="">Choose a player…</option>'+list.map(p=>`<option value="${escapeHTML(p.gameId)}">${escapeHTML(p.ign)} · ${escapeHTML(tierShort[p.tier]||p.tier)}</option>`).join('');
+ a.innerHTML=options;b.innerHTML=options;
+ if(list.some(p=>p.gameId===prevA))a.value=prevA;else if(list[0])a.value=list[0].gameId;
+ if(list.some(p=>p.gameId===prevB))b.value=prevB;else if(list[1])b.value=list[1].gameId;else if(list[0])b.value=list[0].gameId;
+ if(!list.length){$("compareResult").innerHTML='<div class="empty">No published players are available to compare yet.</div>';return}
+ renderComparison();
+}
+function compareCard(p){
+ const tier=String(p.tier||'U');
+ const result=p.total>0?`${Math.min(p.wins,p.total)} wins / ${p.total} recorded matches`:'Not recorded';
+ const rate=p.total>0?`${Math.round(Math.min(p.wins,p.total)/p.total*100)}% recorded wins`:'Not available';
+ const tested=p.testedOn?fmtDate(p.testedOn):'Not recorded';
+ return `<article class="compare-person"><h3>${escapeHTML(p.ign)}</h3><div class="hint">Division ${escapeHTML(p.division)} · ${escapeHTML(p.device||'Device not specified')}</div><div class="compare-tier tier-${escapeHTML(tier)}">${escapeHTML(tierShort[tier]||tier)} · ${escapeHTML(tierNames[tier]||'Unknown tier')}</div><div class="compare-stat-list"><div class="compare-stat"><span>Game ID</span><b>${escapeHTML(p.gameId)}</b></div><div class="compare-stat"><span>Recorded test</span><b>${escapeHTML(result)}</b></div><div class="compare-stat"><span>Recorded win rate</span><b>${escapeHTML(rate)}</b></div><div class="compare-stat"><span>Test date</span><b>${escapeHTML(tested)}</b></div><div class="compare-stat"><span>Tester</span><b>${escapeHTML(p.tester||'Not recorded')}</b></div></div></article>`;
+}
+function renderComparison(){
+ const root=$("compareResult"),aId=$("comparePlayerA").value,bId=$("comparePlayerB").value;
+ if(!aId||!bId){root.innerHTML='<div class="empty">Choose two published players to compare their profiles.</div>';return}
+ const a=players.find(p=>p.gameId===aId&&p.published!==false),b=players.find(p=>p.gameId===bId&&p.published!==false);
+ if(!a||!b){root.innerHTML='<div class="empty">One of these players is no longer in the published roster. Choose again.</div>';return}
+ if(a.gameId===b.gameId){root.innerHTML='<div class="empty">Choose two different players to compare them.</div>';return}
+ root.innerHTML=`<div class="compare-grid">${compareCard(a)}${compareCard(b)}</div>`;
+}
+$("runCompare").addEventListener("click",renderComparison);
+$("comparePlayerA").addEventListener("change",renderComparison);
+$("comparePlayerB").addEventListener("change",renderComparison);
+$("swapCompare").addEventListener("click",()=>{const a=$("comparePlayerA"),b=$("comparePlayerB"),v=a.value;a.value=b.value;b.value=v;renderComparison()});
+
+function renderAll(){renderUpdates();renderRankings();renderAdmin();renderComparisonOptions()}
+function placeApp(id,tier){const a=applications.find(x=>x.id===id);if(!a||!(tier in tierOrder))return;const today=new Date().toISOString().slice(0,10),tester=(CONFIG.contact&&CONFIG.contact.ign)||"";const ex=players.find(p=>p.gameId.toLowerCase()===a.gameId.toLowerCase());if(ex){ex.prevTier=ex.tier!==tier&&ex.tier!=="U"?ex.tier:ex.prevTier||"";ex.tier=tier;ex.testedOn=today;if(tester)ex.tester=tester;ex.published=true}else players.push({ign:a.ign,gameId:a.gameId,division:String(a.division),device:a.device,tier,published:true,tester,wins:0,total:0,testedOn:today,prevTier:"",badges:[]});a.status="Ranked";save();renderAll();notify(a.ign+" placed in "+tierNames[tier]+". Export the roster to publish it.")}
+function changeApp(id,status){const a=applications.find(x=>x.id===id);if(a){a.status=status;save();renderAll();notify("Application marked "+status.toLowerCase()+".")}}
+
+/* ---- filters ---- */
+["searchBar","divisionFilter","tierFilter","sortFilter"].forEach(id=>$(id).addEventListener(id==="searchBar"?"input":"change",renderRankings));
+
+/* ---- application form ---- */
+$("appForm").addEventListener("submit",async e=>{
+ e.preventDefault();
+ if($("hp").value)return; // honeypot: bots fill this
+ const ign=$("ign").value.trim(),gameId=$("gameId").value.trim(),division=$("division").value,device=$("device").value,experience=$("experience").value,achievements=$("achievements").value.trim();
+ if(!ign||!gameId||!achievements)return notify("Please complete every field.",true);
+ if(achievements.length<10)return notify("Tell us a little more about your PvP experience (at least 10 characters).",true);
+ if(!$("agree").checked)return notify("You must accept the testing rules to apply.",true);
+ const last=Number(localStorage.getItem("cnr_last_submit")||0);if(Date.now()-last<20000)return notify("Please wait a few seconds before submitting again.",true);
+ if(players.some(p=>p.gameId.toLowerCase()===gameId.toLowerCase())||applications.some(a=>a.gameId.toLowerCase()===gameId.toLowerCase()&&a.status==="Pending"))return notify("That game ID is already ranked or has a pending application.",true);
+ const rec={id:"app-"+Date.now()+"-"+Math.random().toString(36).slice(2,7),ign,gameId,division,device,experience,achievements,status:"Pending",createdAt:new Date().toISOString()};
+ const btn=$("appSubmit");
+ if(CONFIG.applyEndpoint){
+  btn.disabled=true;btn.textContent="Sending…";
+  try{
+   const r=await fetch(CONFIG.applyEndpoint,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify({ign,gameId,division,device,experience,achievements,submittedAt:rec.createdAt})});
+   if(!r.ok)throw new Error("HTTP "+r.status);
+  }catch(err){btn.disabled=false;btn.textContent="Submit application ↗";return notify("Could not send your application. Check your connection and try again.",true)}
+  btn.disabled=false;btn.textContent="Submit application ↗";
+ }
+ try{localStorage.setItem("cnr_last_submit",String(Date.now()))}catch(_){}
+ applications.unshift(rec);save();e.target.reset();renderAll();
+ notify(CONFIG.applyEndpoint?"Application received. Please wait for the CNR testers to contact you. Your tier is decided after your test.":"Saved on this browser as Pending (not sent to staff).");
+});
+
+/* ---- admin gate ---- */
+async function sha256(text){if(!(window.crypto&&crypto.subtle))throw new Error("no-crypto");const buf=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(text));return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,"0")).join("")}
+function isUnlocked(){try{return sessionStorage.getItem(SESSION_KEY)==="1"}catch(e){return false}}
+function openAdminPanel(){$("adminPanel").classList.remove("hidden");renderAdmin();$("adminPanel").scrollIntoView({behavior:"smooth",block:"start"})}
+$("adminOpen").addEventListener("click",()=>{
+ if(isUnlocked()){$("adminPanel").classList.contains("hidden")?openAdminPanel():$("adminPanel").classList.add("hidden")}
+ else{$("authModal").classList.remove("hidden");setTimeout(()=>$("authPass").focus(),30)}
+});
+$("authCancel").addEventListener("click",()=>{$("authModal").classList.add("hidden");$("authPass").value=""});
+let failedTries=0;
+$("authForm").addEventListener("submit",async e=>{
+ e.preventDefault();
+ if(failedTries>=5)return notify("Too many attempts. Reload the page to try again.",true);
+ try{
+  const h=await sha256($("authPass").value);
+  if(h===CONFIG.adminHash){try{sessionStorage.setItem(SESSION_KEY,"1")}catch(_){}failedTries=0;$("authPass").value="";$("authModal").classList.add("hidden");openAdminPanel()}
+  else{failedTries++;$("authPass").value="";notify("Wrong passcode.",true)}
+ }catch(err){notify("Admin needs a secure (https) page to check the passcode.",true)}
+});
+$("adminLock").addEventListener("click",()=>{try{sessionStorage.removeItem(SESSION_KEY)}catch(_){}$("adminPanel").classList.add("hidden");notify("Admin locked.")});
+$("adminClose").addEventListener("click",()=>$("adminPanel").classList.add("hidden"));
+
+/* ---- admin actions ---- */
+$("manualAppForm").addEventListener("submit",e=>{e.preventDefault();if(!isUnlocked())return;const ign=$("maIgn").value.trim(),gameId=$("maId").value.trim();if(!ign||!gameId)return notify("IGN and game ID are required.",true);if(players.some(p=>p.gameId.toLowerCase()===gameId.toLowerCase())||applications.some(a=>a.gameId.toLowerCase()===gameId.toLowerCase()&&(a.status==="Pending"||a.status==="Testing")))return notify("That game ID is already ranked or in the list.",true);applications.unshift({id:"app-"+Date.now()+"-"+Math.random().toString(36).slice(2,7),ign,gameId,division:$("maDiv").value,device:$("maDev").value,experience:"",achievements:$("maNote").value.trim(),status:"Pending",createdAt:new Date().toISOString()});save();e.target.reset();renderAll();notify(ign+" added as Pending.")});
+$("playerForm").addEventListener("submit",e=>{e.preventDefault();if(!isUnlocked())return;const ign=$("adminIgn").value.trim(),gameId=$("adminId").value.trim(),division=$("adminDivision").value,tier=$("adminTier").value,device=$("adminDevice").value.trim()||"Not specified",extra=readExtra();if(!ign||!gameId)return notify("IGN and game ID are required.",true);if(extra.wins>extra.total)return notify("Test wins cannot be higher than matches played.",true);const existing=players.find(p=>p.gameId.toLowerCase()===gameId.toLowerCase());if(existing)Object.assign(existing,{ign,division,tier,device,published:true,...extra});else players.push({ign,gameId,division,tier,device,published:true,...extra});save();e.target.reset();$("adminDevice").value="Android";renderAll();notify("Player saved. Export roster.json to publish.")});
+$("exportRoster").addEventListener("click",()=>{if(!isUnlocked())return;const json=JSON.stringify(players,null,2),box=$("exportBox");box.value=json;box.classList.remove("hidden");$("copyRoster").classList.remove("hidden");box.focus();box.select();try{const blob=new Blob([json],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="roster.json";document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}catch(e){}notify("Roster ready below. Copy it, or use the downloaded roster.json.")});
+$("copyRoster").addEventListener("click",()=>{const box=$("exportBox");box.select();(navigator.clipboard?navigator.clipboard.writeText(box.value):Promise.reject()).then(()=>notify("Roster copied."),()=>{box.select();notify("Press Ctrl+C to copy the selected text.",true)})});
+$("importRosterBtn").addEventListener("click",()=>$("importRoster").click());
+$("importRoster").addEventListener("change",async e=>{const f=e.target.files[0];e.target.value="";if(!f||!isUnlocked())return;try{const d=JSON.parse(await f.text());if(!Array.isArray(d)||!d.every(validPlayer))throw new Error("bad");players=d.map(mapP);save();renderAll();notify("Roster imported ("+players.length+" players).")}catch(err){notify("That file is not a valid roster.json.",true)}});
+$("resetLocal").addEventListener("click",()=>{if(!isUnlocked())return;if(twoStep($("resetLocal"),"Click again to discard")){try{localStorage.removeItem(STORAGE_KEY);localStorage.removeItem(APP_KEY)}catch(_){}hasLocal=false;applications=[];players=clone(initialPlayers);rosterFrom="built-in sample roster";loadPublished(true);renderAll();notify("Local edits discarded.")}});
+
+/* ---- modals ---- */
+$("modalClose").addEventListener("click",closePlayer);
+if($("modalCopy"))$("modalCopy").addEventListener("click",async()=>{const url=location.href;const p=players.find(x=>x.gameId===currentPlayerId);const shareData={title:(p?p.ign+" | CNR Clan":"CNR Clan player profile"),text:p?`${p.ign} — ${tierNames[p.tier]} on the CNR Clan Blockman Go PvP tier list.`:"CNR Clan Blockman Go PvP tier list",url};try{if(navigator.share){await navigator.share(shareData);notify("Share sheet opened.")}else if(navigator.clipboard&&navigator.clipboard.writeText){await navigator.clipboard.writeText(url);notify("Profile link copied.")}else{throw new Error("Sharing unavailable")}}catch(err){if(err&&err.name==="AbortError")return;notify("Copy this profile link: "+url,true)}});
+$("playerModal").addEventListener("click",e=>{if(e.target.id==="playerModal")closePlayer()});
+$("authModal").addEventListener("click",e=>{if(e.target.id==="authModal")e.currentTarget.classList.add("hidden")});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){closePlayer();$("authModal").classList.add("hidden")}});
+
+/* ---- published roster (roster.json next to this page) ---- */
+async function loadPublished(force){
+ if(hasLocal&&!force)return;
+ const pill=$("updatedPill");
+ const controller=typeof AbortController!=="undefined"?new AbortController():null;
+ const timeout=window.setTimeout(()=>{if(controller)controller.abort()},12000);
+ if(pill){pill.textContent="Loading roster…";pill.dataset.retry="false";pill.title="Loading the published roster.";pill.setAttribute("role","status");pill.setAttribute("aria-live","polite")}
+ try{
+  const options={cache:"no-store"};if(controller)options.signal=controller.signal;
+  const response=await fetch("roster.json",options);
+  if(!response.ok)throw new Error("HTTP "+response.status);
+  const data=await response.json();
+  if(!Array.isArray(data)||!data.every(validPlayer))throw new Error("Roster schema is invalid");
+  const ids=data.map(p=>String(p.gameId).trim().toLowerCase());
+  if(new Set(ids).size!==ids.length)throw new Error("Duplicate player game IDs");
+  players=data.map(mapP);rosterFrom="published roster.json";renderAll();openFromHash();
+  if(pill){pill.textContent="Published roster · "+(CONFIG.lastUpdated||"Current");pill.title="Loaded successfully from roster.json";pill.dataset.retry="false"}
+ }catch(error){
+  if(pill){
+   pill.textContent=hasLocal?"Local roster":"Roster unavailable · tap to retry";
+   pill.title=hasLocal?"Using your local edits in this browser.":"Could not load roster.json. Tap to retry. Check that it exists beside index.html and contains valid player records.";
+   pill.dataset.retry=hasLocal?"false":"true";
+  }
+  console.warn("CNR roster load failed:",error&&error.message?error.message:error);
+ }finally{window.clearTimeout(timeout)}
+}
+$("updatedPill").addEventListener("click",()=>{if(!hasLocal&&$("updatedPill").dataset.retry==="true")loadPublished(true)});
+$("year").textContent=new Date().getFullYear();
+renderAll();
+openFromHash();
+loadPublished(false);
+(function(){const b=$("toTop");window.addEventListener("scroll",()=>b.classList.toggle("hidden",window.scrollY<700),{passive:true});b.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}))})();
+</script>
+
+<script>
+/* CNR live atmosphere v3: premium aurora, constellation field, and occasional light trails. */
+(()=>{
+ const canvas=document.getElementById('cnr-live-bg');
+ const progress=document.getElementById('cnrProgressBar');
+ const reducedMotion=!!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+ let ctx=null;try{ctx=canvas&&canvas.getContext?canvas.getContext('2d',{alpha:true}):null}catch(_){ctx=null;}
+ let w=0,h=0,dpr=1,points=[],streaks=[],raf=0,last=0,elapsed=0;
+ const palette=['255,82,104','120,216,255','255,155,114'];
+ function resize(){
+  if(!canvas||!ctx)return;
+  dpr=Math.min(window.devicePixelRatio||1,1.5);w=window.innerWidth;h=window.innerHeight;
+  canvas.width=Math.max(1,Math.floor(w*dpr));canvas.height=Math.max(1,Math.floor(h*dpr));
+  canvas.style.width=w+'px';canvas.style.height=h+'px';ctx.setTransform(dpr,0,0,dpr,0,0);
+  const mobile=w<760;const count=Math.min(mobile?38:72,Math.max(mobile?16:26,Math.floor(w*h/(mobile?26000:16500))));
+  points=Array.from({length:count},(_,i)=>({x:Math.random()*w,y:Math.random()*h,ox:Math.random()*w,oy:Math.random()*h,vx:(Math.random()-.5)*.28,vy:(Math.random()-.5)*.22,r:Math.random()*1.55+.45,a:Math.random()*.45+.18,phase:Math.random()*Math.PI*2,c:palette[i%palette.length]}));
+  streaks=[];render(0,true);
+ }
+ function render(t,move){
+  if(!ctx)return;ctx.clearRect(0,0,w,h);
+  // Slow, broad ambient light blooms make the field feel alive without distracting from text.
+  const time=t*.00012;
+  const blooms=[{x:w*(.18+.09*Math.sin(time)),y:h*(.20+.11*Math.cos(time*1.3)),r:Math.max(w,h)*.32,c:'255,55,91'},
+                {x:w*(.82+.07*Math.cos(time*.8)),y:h*(.33+.12*Math.sin(time*1.1)),r:Math.max(w,h)*.29,c:'77,167,255'},
+                {x:w*(.55+.10*Math.sin(time*.7)),y:h*(.88+.04*Math.cos(time)),r:Math.max(w,h)*.25,c:'157,74,154'}];
+  for(const b of blooms){const g=ctx.createRadialGradient(b.x,b.y,0,b.x,b.y,b.r);g.addColorStop(0,`rgba(${b.c},.075)`);g.addColorStop(.48,`rgba(${b.c},.027)`);g.addColorStop(1,`rgba(${b.c},0)`);ctx.fillStyle=g;ctx.fillRect(0,0,w,h)}
+  // Thin moving arcs: abstract signal paths, not a game HUD.
+  ctx.save();ctx.lineWidth=1;
+  for(let i=0;i<3;i++){
+   const cx=w*(.18+i*.32)+Math.sin(time+i*2)*w*.035,cy=h*(.28+i*.23)+Math.cos(time*1.2+i)*h*.025;
+   ctx.beginPath();ctx.ellipse(cx,cy,Math.min(w*.25,240+i*24),Math.min(h*.14,95+i*15),-.16+i*.12,Math.PI*(.12+i*.08),Math.PI*(1.05+i*.08));
+   ctx.strokeStyle=`rgba(${i===1?'120,216,255':'255,100,126'},${.045+.018*Math.sin(time*3+i)})`;ctx.stroke();
+  }
+  ctx.restore();
+  // Constellation particles drift slowly; connection lines fade with distance.
+  for(let i=0;i<points.length;i++){
+   const p=points[i];if(move){p.x+=p.vx;p.y+=p.vy;p.phase+=.018;if(p.x<-12)p.x=w+12;if(p.x>w+12)p.x=-12;if(p.y<-12)p.y=h+12;if(p.y>h+12)p.y=-12;}
+   for(let j=i+1;j<points.length;j++){
+    const q=points[j],dx=p.x-q.x,dy=p.y-q.y,d=Math.hypot(dx,dy);
+    if(d<Math.min(175,w*.24)){const alpha=(1-d/Math.min(175,w*.24))*.17;ctx.beginPath();ctx.strokeStyle=`rgba(133,171,212,${alpha})`;ctx.lineWidth=.65;ctx.moveTo(p.x,p.y);ctx.lineTo(q.x,q.y);ctx.stroke();}
+   }
+   const pulse=.72+.28*Math.sin(p.phase);ctx.beginPath();ctx.fillStyle=`rgba(${p.c},${p.a*pulse})`;ctx.shadowBlur=8+pulse*8;ctx.shadowColor=`rgba(${p.c},.62)`;ctx.arc(p.x,p.y,p.r*(.85+pulse*.25),0,Math.PI*2);ctx.fill();ctx.shadowBlur=0;
+   if(i%7===0){ctx.beginPath();ctx.strokeStyle=`rgba(${p.c},${.08+.05*pulse})`;ctx.lineWidth=.6;ctx.moveTo(p.x-4,p.y);ctx.lineTo(p.x+4,p.y);ctx.moveTo(p.x,p.y-4);ctx.lineTo(p.x,p.y+4);ctx.stroke();}
+  }
+  // One or two short, soft light trails appear occasionally and travel diagonally.
+  if(move&&Math.random()<.012&&streaks.length<2){streaks.push({x:Math.random()*w*.8,y:Math.random()*h*.62,len:45+Math.random()*65,v:3+Math.random()*2,life:1,c:Math.random()>.5?'120,216,255':'255,112,131'});}
+  streaks=streaks.filter(s=>s.life>0&&s.x<w+120&&s.y<h+120);
+  for(const s of streaks){if(move){s.x+=s.v;s.y+=s.v*.42;s.life-=.012;}const g=ctx.createLinearGradient(s.x-s.len,s.y-s.len*.42,s.x,s.y);g.addColorStop(0,`rgba(${s.c},0)`);g.addColorStop(1,`rgba(${s.c},${.48*s.life})`);ctx.strokeStyle=g;ctx.lineWidth=1.2;ctx.beginPath();ctx.moveTo(s.x-s.len,s.y-s.len*.42);ctx.lineTo(s.x,s.y);ctx.stroke();ctx.beginPath();ctx.fillStyle=`rgba(${s.c},${.45*s.life})`;ctx.arc(s.x,s.y,1.3,0,Math.PI*2);ctx.fill();}
+ }
+ function draw(t){if(!ctx||document.hidden)return;if(t-last<32){raf=requestAnimationFrame(draw);return;}last=t;elapsed=t;render(t,true);raf=requestAnimationFrame(draw);}
+ function onScroll(){if(!progress)return;const root=document.documentElement;const max=root.scrollHeight-window.innerHeight;const pct=max>0?Math.max(0,Math.min(100,window.scrollY/max*100)):0;progress.style.width=pct+'%';}
+ if(canvas&&ctx){resize();if(!reducedMotion)raf=requestAnimationFrame(draw);window.addEventListener('resize',()=>{resize();cancelAnimationFrame(raf);last=0;if(!reducedMotion&&!document.hidden)raf=requestAnimationFrame(draw)},{passive:true});document.addEventListener('visibilitychange',()=>{if(document.hidden)cancelAnimationFrame(raf);else if(!reducedMotion){last=0;raf=requestAnimationFrame(draw)}});}
+ window.addEventListener('scroll',onScroll,{passive:true});window.addEventListener('resize',onScroll,{passive:true});onScroll();
+})();
+</script>
+
+
+<script>
+/* CNR premium interaction layer: pointer spotlight and low-cost scroll reveals. */
+(()=>{
+ const fine=window.matchMedia&&window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+ const reduced=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ const spotlight=document.querySelector('.cnr-spotlight');
+ if(fine&&spotlight){let queued=false,lastX=innerWidth*.5,lastY=innerHeight*.35;window.addEventListener('pointermove',e=>{lastX=e.clientX;lastY=e.clientY;if(!queued){queued=true;requestAnimationFrame(()=>{spotlight.style.setProperty('--mx',lastX+'px');spotlight.style.setProperty('--my',lastY+'px');queued=false})}},{passive:true})}
+ if(!reduced&&'IntersectionObserver'in window){const targets=document.querySelectorAll('.section,.stats,.hero-panel,.tier-row,.card,.guide .gcard');if(targets.length){document.documentElement.classList.add('js-reveal-ready');const io=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('reveal-on-scroll','is-visible');io.unobserve(entry.target)} }),{threshold:.08,rootMargin:'0px 0px -24px 0px'});targets.forEach(el=>{el.classList.add('reveal-on-scroll');io.observe(el)})}}
+})();
+</script>
+
+</body>
+</html>
